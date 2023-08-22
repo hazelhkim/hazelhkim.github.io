@@ -363,8 +363,9 @@ form {
   width: 100%;
   box-sizing: border-box; }
 .u-max-full-width {
-    height: 200px;
-    object-fit: contain;
+  height: 200px;
+  object-fit: contain;
+  border-radius: 50%;
   max-width: 120%;
   box-sizing: border-box; }
 .u-pull-right {

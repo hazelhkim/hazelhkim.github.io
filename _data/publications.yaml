@@ -1,5 +1,12 @@
 papers:
 
+  - title: "ATHENA: Mathematical Reasoning with Thought Expansion"
+    authors: "JB. Kim, Hazel Kim, Joonghyuk Hahn, Yo-Sub Han"
+    venue: "Arxiv"
+    paper_pdf: https://openreview.net/forum?id=wryrfIb8xOY
+    nlp: y
+    selected: y
+
   - title: "ALP: Data Augmentation Using Lexicalized PCFGs for Few-Shot Text Classification"
     authors: "Hazel Kim, Daecheol Woo, Seong Joon Oh, Jeong-Won Cha, Yo-Sub Han"
     venue: "AAAI 2022"

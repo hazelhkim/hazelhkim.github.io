@@ -2,7 +2,7 @@ papers:
 
   - title: "ATHENA: Mathematical Reasoning with Thought Expansion"
     authors: "JB. Kim, Hazel Kim, Joonghyuk Hahn, Yo-Sub Han"
-    venue: "Arxiv"
+    venue: "EMNLP 2023"
     paper_pdf: https://openreview.net/forum?id=wryrfIb8xOY
     nlp: y
     selected: y

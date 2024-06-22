@@ -1,8 +1,8 @@
 html {
-    zoom: 0.7; /* Old IE only */
-    -moz-transform: scale(0.7);
-    -webkit-transform: scale(0.7);
-    transform: scale(0.7);
+    zoom: 0.8; /* Old IE only */
+    -moz-transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
 }
 h4 {
   letter-spacing: .1rem; }

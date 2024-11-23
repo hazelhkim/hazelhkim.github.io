@@ -1,15 +1,15 @@
 papers:
   - title: "Detecting LLM Hallucination through Layer-wise Information Deficiency"
-    authors: "Hazel Kim, Adel Bibi, Phil Torr, Yarin Gal"
+    authors: 
     venue: "Preprint"
-    paper_pdf: https://github.com/hazelhkim/hazelhkim.github.io/blob/main/_data/aura.pdf
+    paper_pdf: 
     nlp: y
     selected: y
 
   - title: "How Ambiguous Are the Rationales For Natural Language Reasoning?"
     authors: "Hazel Kim"
     venue: "Submitted to COLING 2025"
-    paper_pdf: 
+    paper_pdf: https://github.com/hazelhkim/hazelhkim.github.io/blob/main/_data/aura.pdf
     nlp: y
     selected: y
 

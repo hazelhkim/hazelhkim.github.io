@@ -1,6 +1,6 @@
 papers:
-  - title: "A Lack of Layer Information Causing Hallucination in Large Language Models"
-    authors: "Hazel Kim"
+  - title: "Detecting LLM Hallucination through Layer-wise Information Deficiency"
+    authors: "Hazel Kim, Adel Bibi, Phil Torr, Yarin Gal"
     venue: "Preprint"
     paper_pdf: 
     nlp: y

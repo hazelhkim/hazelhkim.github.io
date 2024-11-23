@@ -1,14 +1,14 @@
 papers:
   - title: "A Lack of Layer Information Causing Hallucination in Large Language Models"
-    authors: "Hazel Kim, Phil Torr, Adel Bibi"
+    authors: "Hazel Kim"
     venue: "Preprint"
     paper_pdf: 
     nlp: y
     selected: y
 
-  - title: "How Ambiguous the Rationales Are For Natural Language Reasoning?"
+  - title: "How Ambiguous Are the Rationales For Natural Language Reasoning?"
     authors: "Hazel Kim"
-    venue: "COLING 2025 (Under Review: (4/4, 4/4, 4/3))"
+    venue: "Submitted to COLING 2025"
     paper_pdf: 
     nlp: y
     selected: y

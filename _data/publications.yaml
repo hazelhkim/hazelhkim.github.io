@@ -8,7 +8,7 @@ papers:
 
   - title: "How Ambiguous Are the Rationales For Natural Language Reasoning?"
     authors: "Hazel Kim"
-    venue: "Submitted to COLING 2025"
+    venue: "Accepted to COLING 2025"
     paper_pdf: https://arxiv.org/pdf/2402.14337
     nlp: y
     selected: y

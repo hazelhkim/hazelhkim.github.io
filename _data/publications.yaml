@@ -1,6 +1,6 @@
 papers:
   - title: "Detecting LLM Hallucination through Layer-wise Information Deficiency"
-    authors: 
+    authors: "Hazel Kim, Adel Bibi, Philip Torr, Yarin Gal"
     venue: "Preprint"
     paper_pdf: 
     nlp: y

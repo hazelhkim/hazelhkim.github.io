@@ -2,7 +2,7 @@ papers:
   - title: "Measuring what Matters: Construct Validity in Large Language Model Benchmarks"
     authors: "Andrew M. Bean, Ryan Othniel Kearns, Angelika Romanou, Franziska Sofia Hafner, Harry Mayne, Jan Batzner, Negar Foroutan, Chris Schmitz, Karolina Korgul, Hunar Batra, Oishi Deb, Emma Beharry, Cornelius Emde, Thomas Foster, Anna Gausen, María Grandury, Simeng Han, Valentin Hofmann, Lujain Ibrahim, Hazel Kim, Hannah Rose Kirk, Fangru Lin, Gabrielle Kaili-May Liu, Lennart Luettgau, Jabez Magomere, Jonathan Rystrøm, Anna Sotnikova, Yushi Yang, Yilun Zhao, Adel Bibi, Antoine Bosselut, Ronald Clark, Arman Cohan, Jakob Nicolaus Foerster, Yarin Gal, Scott A. Hale, Inioluwa Deborah Raji, Christopher Summerfield, Philip Torr, Cozmin Ududec, Luc Rocher, Adam Mahdi"
     venue: "NeurIPS 2025 Datasets & Benchmarks"
-    paper_pdf: https://neurips.cc/virtual/2025/poster/121477
+    paper_pdf: https://openreview.net/pdf?id=mdA5lVvNcU
     nlp: y
     selected: y
     
@@ -40,6 +40,7 @@ papers:
     paper_pdf: https://arxiv.org/pdf/2202.02566.pdf
     nlp: y
     selected: y
+
 
 
 

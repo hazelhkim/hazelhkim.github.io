@@ -198,15 +198,15 @@ h4 {
     border-bottom-color: #33C3F0; }
 }
 .subtitle-list {
-  margin: 4px 0 0 0;
-  padding-left: 1.2em;
+  margin: 2px 0 0 0;
+  padding-left: 1em;        /* space before the bullet — lower = less indent */
   list-style: disc;
 }
 .subtitle-list li {
   margin: 0;
   padding: 0;
-  line-height: 1.3;
+  line-height: 1.25;        /* gap within/between wrapped lines */
 }
 .desc {
-  line-height: 1.3;
+  line-height: 0.5;
 }

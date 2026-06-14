@@ -2,7 +2,7 @@ experiences:
 - place: "University of Oxford"
   time: "2023 - now"
   title: "DPhil Candidate, CS, ELLIS PhD Student"
-  subtitle: "Admitted in 2022 (Direct recruitment by Yarin Gal), Deferred enrollment to 2023"
+  subtitle: "Admitted in 2022 (direct recruitment by Yarin Gal); deferred enrollment to 2023"
   category: "school"
 
 - place: "CLASSTING AI RESEARCH"
@@ -20,7 +20,7 @@ experiences:
 - place: "Yonsei University"
   time: "2020 - 2022"
   title: "Master in Artificial Intelligence"
-  subtitle: "Learning with Limited Data Using Compositionality in Language, Mathematical reaoning (EMNLP23) and Legal Reasoning (Co-worked with Yulchon LLC., the 5th largest law firm in Korea)"
+  subtitle: "Learning with Limited Data Using Compositionality in Language, Attention-based mathematical reasoning (EMNLP23) and knowledge graph-based legal reasoning (co-worked with Yulchon LLC., the 5th largest law firm in Korea)"
   category: "school"
 
 - place: "Kalamazoo College"

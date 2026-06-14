@@ -7,20 +7,20 @@ experiences:
 
 - place: "CLASSTING AI RESEARCH"
   time: "2022 - 2023"
-  title: "NLP/ML Lead, AI Research"
-  subtitle: "Rationales and Reasoning with Large Language Models"
+  title: "NLP/ML Research Lead"
+  subtitle: "Rationales and Reasoning with Large Language Models (COLING25)"
   category: "work"
 
 - place: "NAVER AI LAB"
   time: "2021 - 2022"
-  title: "Research Intern, NLP/ML Research, (Foundation Model Commonsense Reasoning)"
+  title: "NLP/ML Research Intern, (Foundation Model Commonsense Reasoning)"
   subtitle: "Hosted by Seong Joon Oh, and collaborated with Sangdoo Yoon and Kangmin Yoo."
   category: "work"
 
 - place: "Yonsei University"
   time: "2020 - 2022"
   title: "Master in Artificial Intelligence"
-  subtitle: "Learning with Limited Data Using Compositionality in Language"
+  subtitle: "Learning with Limited Data Using Compositionality in Language (AAAI22), Attention-Based mathemtical reasoning (EMNLP23), Knolwedge graph-based legal reasoning (co-worked with Yulchon LLC., the 5th largest firm in Korea)"
   category: "school"
 
 - place: "Kalamazoo College"

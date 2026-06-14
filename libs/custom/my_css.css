@@ -205,8 +205,8 @@ h4 {
 .subtitle-list li {
   margin: 0;
   padding: 0;
-  line-height: 0;        /* gap within/between wrapped lines */
+  line-height: 0.5;        /* gap within/between wrapped lines */
 }
 .desc {
-  line-height: 0;
+  line-height: 0.5;
 }

@@ -227,7 +227,15 @@ title: Home
           <span class="flag">{{ exp.place }}</span> 
           <span class="time-wrapper"><span class="time">{{ exp.time }}</span></span> 
        </div> 
-        <div class="desc"><b>{{ exp.title }}</b> <br/> {{ exp.subtitle }}</div> 
+        <!-- <div class="desc"><b>{{ exp.title }}</b> <br/> {{ exp.subtitle }}</div>  -->
+        <div class="desc">
+        <b>{{ exp.title | split: ", " | join: "<br/>" }}</b>
+        <ul class="subtitle-list">
+          {% for item in exp.subtitle %}
+          <li>{{ item }}</li>
+          {% endfor %}
+        </ul>
+      </div>
       </div> 
     </li>
      {% endfor %}

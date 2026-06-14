@@ -201,7 +201,7 @@ h4 {
   margin: 2px 0 0 0;
   padding-left: 1em;
   list-style: disc;
-  font-size: 1.3em;      /* bigger; bump to 1.2em if you want more */
+  font-size: 1.15em;      /* bigger; bump to 1.2em if you want more */
 }
 .subtitle-list li {
   margin: 0;

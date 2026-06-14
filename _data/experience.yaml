@@ -20,13 +20,13 @@
 # - place: "Yonsei University"
 #   time: "2020 - 2022"
 #   title: "Master in Artificial Intelligence"
-#   subtitle: "Learning with Limited Data Using Compositionality in Language (AAAI22), Attention-Based mathemtical reasoning (EMNLP23), Knolwedge graph-based legal reasoning (co-worked with Yulchon LLC., the 5th largest firm in Korea)"
+#   subtitle: "Learning with Limited Data Using Compositionality in Language (AAAI22), Attention-Based mathemtical reasoning (EMNLP23), Knolwedge graph-based legal reasoning (co-worked with Yulchon LLC.)"
 #   category: "school"
 
 # - place: "Kalamazoo College"
 #   time: "2014 - 2019"
 #   title: "B.A. in Computer Science and Political Science"
-#   subtitle: "Founder's Scholar, Advisors: Alyce Brady (Computer Science), John Dugas (Political Science), Andrew Koehler (Violin). The International Collegiate Programming Contest (ICPC), North America Division Championship 2018"
+#   subtitle: "Founder's Scholar, Advisors: Alyce Brady (CS), John Dugas (PS), Andrew Koehler (Violin). The International Collegiate Programming Contest (ICPC), North America Division Championship 2018"
 #   category: "school" 
 
 # - place: "Seoul National University"
@@ -69,14 +69,15 @@ experiences:
   subtitle:
     - "Learning with Limited Data Using Compositionality in Language (AAAI22)"
     - "Attention-Based mathematical reasoning (EMNLP23)"
-    - "Knowledge graph-based legal reasoning (co-worked with Yulchon LLC., the 5th largest firm in Korea)"
+    - "Knowledge graph-based legal reasoning (co-worked with Yulchon LLC.)"
   category: "school"
 - place: "Kalamazoo College"
   time: "2014 - 2019"
   title: "B.A. in Computer Science and Political Science"
   subtitle:
     - "Founder's Scholar"
-    - "Advisors: Alyce Brady (Computer Science), John Dugas (Political Science), Andrew Koehler (Violin)"
+    - "Advisors: Alyce Brady (CS), John Dugas (PS)
+    - "          Andrew Koehler (Violin)"
     - "ICPC North America Division Championship 2018"
   category: "school"
 - place: "Seoul National University"

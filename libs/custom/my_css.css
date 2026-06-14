@@ -199,15 +199,15 @@ h4 {
 }
 .subtitle-list {
   margin: 2px 0 0 0;
-  padding-left: 1em;        /* space before the bullet — lower = less indent */
+  padding-left: 1em;
   list-style: disc;
-  font-size: 1.05em;
+  font-size: 1.3em;      /* bigger; bump to 1.2em if you want more */
 }
 .subtitle-list li {
   margin: 0;
   padding: 0;
-  line-height: 0;        /* gap within/between wrapped lines */
+  line-height: 1.15;      /* tight spacing between lines — valid range */
 }
 .desc {
-  line-height: -2.0;
+  line-height: 1.3;
 }

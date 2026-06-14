@@ -1,8 +1,8 @@
 experiences:
 - place: "University of Oxford"
   time: "2023 - now"
-  title: "Postgraduate"
-  subtitle: "OATML Group"
+  title: "DPhil Candidate, CS, ELLIS PhD Student"
+  subtitle: "Admitted in 2022 (Direct recruitment by Yarin Gal), Deferred enrollment to 2023."
   category: "school"
 
 - place: "CLASSTING AI RESEARCH"
@@ -13,7 +13,7 @@ experiences:
 
 - place: "NAVER AI LAB"
   time: "2021 - 2022"
-  title: "Research Intern, NLP/ML Research (hosted by Seong Joon Oh, and collaborated with Sangdoo Yoon and Kangmin Yoo)"
+  title: "Research Intern, NLP/ML Research, (Foundation Model Commonsense Reasoning)"
   subtitle: "Hosted by Seong Joon Oh, and collaborated with Sangdoo Yoon and Kangmin Yoo."
   category: "work"
 
@@ -27,7 +27,7 @@ experiences:
   time: "2014 - 2019"
   title: "B.A. in Computer Science and Political Science"
   subtitle: "Founder's Scholar"
-  category: "school"
+  category: "school" 
 
 - place: "Seoul National University"
   time: "2012 - 2014"

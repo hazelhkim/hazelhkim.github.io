@@ -178,9 +178,9 @@ code {
   margin: 1.35rem 0 0;
   max-width: 34rem;
   font-family: var(--serif);
-  font-size: 1.02rem;
+  font-size: clamp(1.25rem, 2.4vw, 1.55rem);
   font-weight: 500;
-  line-height: 1.45;
+  line-height: 1.35;
 }
 
 .hero-research-link {
@@ -231,13 +231,73 @@ code {
   font-size: 0.9rem;
 }
 
-.hero-photo {
+.hero-about {
+  margin-top: 1.25rem;
+}
+
+.hero-about p {
   margin: 0;
+}
+
+.hero-bio-link {
+  display: inline-block;
+  margin-left: 0.35rem;
+  font-family: var(--sans);
+  font-size: 0.84em;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(184, 107, 42, 0.35);
+  white-space: nowrap;
+}
+
+.hero-bio-link:hover {
+  border-bottom-color: var(--accent);
+}
+
+.hero-visual {
   position: relative;
   justify-self: end;
-  width: min(100%, 200px);
+  width: min(100%, 275px);
+  margin-right: 0.55rem;
+  padding-top: 0.65rem;
+}
+
+.hero-study {
+  position: relative;
+  z-index: 0;
+  margin: 0;
+  border-radius: 1rem;
+  overflow: hidden;
+  transform: translateX(-0.9rem);
+}
+
+.hero-study::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.18);
+  pointer-events: none;
+}
+
+.hero-study img {
+  display: block;
+  width: 100%;
+  height: auto;
+  filter: brightness(1.12) contrast(0.96) saturate(0.92);
+}
+
+.hero-photo {
+  position: absolute;
+  margin: 0;
+  right: -1.35rem;
+  top: -0.55rem;
+  width: 56%;
+  z-index: 1;
   overflow: hidden;
   border-radius: 50%;
+  outline: 3px solid var(--bg);
+  box-shadow: 0 6px 18px rgba(18, 21, 26, 0.12);
 }
 
 .hero-photo img {
@@ -343,13 +403,13 @@ code {
   border: 1px solid var(--line);
   background: #fff;
   overflow: hidden;
-  min-height: 70vh;
+  min-height: 42vh;
 }
 
 .pdf-embed iframe {
   display: block;
   width: 100%;
-  height: min(80vh, 900px);
+  height: min(52vh, 560px);
   border: 0;
 }
 
@@ -781,10 +841,21 @@ a.news-title:hover {
     padding-top: 1.75rem;
   }
 
-  .hero-photo {
+  .hero-visual {
     order: -1;
     justify-self: start;
-    width: min(100%, 180px);
+    width: min(100%, 240px);
+    margin-right: 0.4rem;
+  }
+
+  .hero-study {
+    transform: translateX(-0.55rem);
+  }
+
+  .hero-photo {
+    width: 52%;
+    right: -0.95rem;
+    top: -0.45rem;
   }
 
   .paper {

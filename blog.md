@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Blog
+title: Life
 subtitle: Notes on research, papers, and related ideas.
 permalink: /blog/
 ---

@@ -15,30 +15,35 @@ title: Home
       <li><a href="{{ site.data.main_info.github }}" target="_blank" rel="noopener">GitHub</a></li>
       <li><a href="{{ site.data.main_info.linkedin }}" target="_blank" rel="noopener">LinkedIn</a></li>
       <li><a href="{{ '/publications/' | relative_url }}">Publications</a></li>
-      <li><a href="{{ '/blog/' | relative_url }}">Blog</a></li>
+      <li><a href="{{ '/blog/' | relative_url }}">Life</a></li>
     </ul>
     <p class="hero-email">{{ site.data.main_info.email }}</p>
+    <div class="hero-about prose">
+      <p>
+        I am a DPhil student in computer science at the <a href="https://www.ox.ac.uk/" target="_blank" rel="noopener">University of Oxford</a>, conducting research in Natural Language Processing and Machine Learning.
+        I am grateful to be advised by <a href="https://eng.ox.ac.uk/people/philip-torr/" target="_blank" rel="noopener">Philip Torr</a> and <a href="https://www.cs.ox.ac.uk/people/yarin.gal/website/" target="_blank" rel="noopener">Yarin Gal</a> from Oxford and <a href="https://cisnlp.github.io/about/" target="_blank" rel="noopener">Hinrich Schütze</a> from LMU Munich as a student of the European Laboratory for Learning and Intelligent Systems (<a href="https://ellis.eu/" target="_blank" rel="noopener">ELLIS Society</a>).
+        <a class="hero-bio-link" href="{{ '/bio/' | relative_url }}">Full bio →</a>
+      </p>
+    </div>
   </div>
-  <figure class="hero-photo">
-    <img
-      src="{{ site.data.main_info.profile_pic | relative_url }}"
-      alt="Portrait of {{ site.data.main_info.name }}"
-      width="1069"
-      height="1149"
-    >
-  </figure>
-</section>
-
-<section class="section">
-  <div class="section-head">
-    <div class="section-label">About</div>
-    <a class="section-more" href="{{ '/bio/' | relative_url }}">Full bio →</a>
-  </div>
-  <div class="prose">
-    <p>
-      I am a DPhil student in computer science at the <a href="https://www.ox.ac.uk/" target="_blank" rel="noopener">University of Oxford</a>, conducting research in Natural Language Processing and Machine Learning.
-      I am grateful to be advised by <a href="https://eng.ox.ac.uk/people/philip-torr/" target="_blank" rel="noopener">Philip Torr</a> and <a href="https://www.cs.ox.ac.uk/people/yarin.gal/website/" target="_blank" rel="noopener">Yarin Gal</a> from Oxford and <a href="https://cisnlp.github.io/about/" target="_blank" rel="noopener">Hinrich Schütze</a> from LMU Munich as a student of the European Laboratory for Learning and Intelligent Systems (<a href="https://ellis.eu/" target="_blank" rel="noopener">ELLIS Society</a>).
-    </p>
+  <div class="hero-visual">
+    <figure class="hero-study">
+      <img
+        src="{{ '/assets/image-study.jpg' | relative_url }}"
+        alt="Study nook at night — desk, books, and armchair"
+        width="1130"
+        height="1600"
+        loading="eager"
+      >
+    </figure>
+    <figure class="hero-photo">
+      <img
+        src="{{ site.data.main_info.profile_pic | relative_url }}"
+        alt="Portrait of {{ site.data.main_info.name }}"
+        width="1069"
+        height="1149"
+      >
+    </figure>
   </div>
 </section>
 
@@ -81,7 +86,7 @@ title: Home
 
 <section class="section">
   <div class="section-head">
-    <div class="section-label">Recent posts</div>
+    <div class="section-label">Life</div>
     <a class="section-more" href="{{ '/blog/' | relative_url }}">All posts →</a>
   </div>
   {% if site.posts.size > 0 %}
@@ -99,6 +104,6 @@ title: Home
       {% endfor %}
     </ul>
   {% else %}
-    <p class="empty-note">Blog posts will appear here.</p>
+    <p class="empty-note">Life posts will appear here.</p>
   {% endif %}
 </section>

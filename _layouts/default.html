@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;1,6..72,500&family=Sora:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="{{ '/libs/custom/my_css.css' | relative_url }}?v=hazelnut-header">
+  <link rel="stylesheet" href="{{ '/libs/custom/my_css.css' | relative_url }}?v=bio-slides-sm">
   <link rel="icon" type="image/png" href="{{ '/libs/icon.png' | relative_url }}?v=hazelnut-match">
 </head>
 <body>
@@ -27,7 +27,7 @@
           <a href="{{ '/' | relative_url }}" {% if page.url == '/' %}class="is-active"{% endif %}>About</a>
           <a href="{{ '/research/' | relative_url }}" {% if page.url contains '/research' %}class="is-active"{% endif %}>Research</a>
           <a href="{{ '/publications/' | relative_url }}" {% if page.url contains '/publications' %}class="is-active"{% endif %}>Publications</a>
-          <a href="{{ '/blog/' | relative_url }}" {% if page.url contains '/blog' %}class="is-active"{% endif %}>Blog</a>
+          <a href="{{ '/blog/' | relative_url }}" {% if page.url contains '/blog' %}class="is-active"{% endif %}>Life</a>
           <a href="{{ '/bio/' | relative_url }}" {% if page.url contains '/bio' %}class="is-active"{% endif %}>Bio</a>
         </nav>
     </div>

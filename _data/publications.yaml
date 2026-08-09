@@ -3,6 +3,7 @@ papers:
     authors: "Hazel Kim, Philip Torr"
     venue: "Preprint"
     paper_pdf: https://arxiv.org/pdf/2512.23518
+    thumb: /assets/paper-thumbs/molace.svg
     summary: "Introduces MoLaCE, an inference-time method that mixes latent-concept experts so a single LLM can resist confirmation bias—emulating multi-agent debate more efficiently and reducing echo-chamber effects."
     nlp: y
     selected: y
@@ -11,6 +12,7 @@ papers:
     authors: "Andrew M. Bean, Ryan Othniel Kearns, Angelika Romanou, Franziska Sofia Hafner, Harry Mayne, Jan Batzner, Negar Foroutan, Chris Schmitz, Karolina Korgul, Hunar Batra, Oishi Deb, Emma Beharry, Cornelius Emde, Thomas Foster, Anna Gausen, María Grandury, Simeng Han, Valentin Hofmann, Lujain Ibrahim, Hazel Kim, Hannah Rose Kirk, Fangru Lin, Gabrielle Kaili-May Liu, Lennart Luettgau, Jabez Magomere, Jonathan Rystrøm, Anna Sotnikova, Yushi Yang, Yilun Zhao, Adel Bibi, Antoine Bosselut, Ronald Clark, Arman Cohan, Jakob Nicolaus Foerster, Yarin Gal, Scott A. Hale, Inioluwa Deborah Raji, Christopher Summerfield, Philip Torr, Cozmin Ududec, Luc Rocher, Adam Mahdi"
     venue: "NeurIPS 2025 Datasets & Benchmarks"
     paper_pdf: https://openreview.net/pdf?id=mdA5lVvNcU
+    thumb: /assets/paper-thumbs/construct-validity.svg
     summary: "A systematic review of 445 LLM benchmarks with 29 experts, showing how weak construct validity undermines claims about safety and capability, and offering eight recommendations for more rigorous evaluation."
     nlp: y
     selected: y
@@ -19,6 +21,7 @@ papers:
     authors: "Hazel Kim, Tom A. Lamb, Adel Bibi, Philip Torr, Yarin Gal"
     venue: "EMNLP 2025"
     paper_pdf: https://arxiv.org/pdf/2412.10246
+    thumb: /assets/paper-thumbs/hallucination-layers.svg
     summary: "Detects hallucinations at test time by tracking usable-information deficiencies across model layers—especially under ambiguous or unanswerable prompts—without extra training or architecture changes."
     nlp: y
     selected: y
@@ -27,6 +30,7 @@ papers:
     authors: "Hazel Kim"
     venue: "COLING 2025"
     paper_pdf: https://arxiv.org/pdf/2402.14337
+    thumb: /assets/paper-thumbs/ambiguous-rationales.svg
     summary: "Studies how uncertain or ambiguous rationales affect reasoning performance, and proposes a simple way for models to choose among reasoning paths when rationale quality is inconsistent."
     nlp: y
     selected: y
@@ -35,6 +39,7 @@ papers:
     authors: "JB. Kim, Hazel Kim, Joonghyuk Hahn, Yo-Sub Han"
     venue: "EMNLP 2023"
     paper_pdf: https://arxiv.org/pdf/2311.01036.pdf
+    thumb: /assets/paper-thumbs/athena.svg
     summary: "Presents ATHENA, an attention-based architecture that expands candidate mathematical thoughts step by step, improving math-word-problem solving under limited or varied training signals."
     nlp: y
     selected: y
@@ -43,6 +48,7 @@ papers:
     authors: "Hazel Kim, Daecheol Woo, Seong Joon Oh, Jeong-Won Cha, Yo-Sub Han"
     venue: "AAAI 2022"
     paper_pdf: https://ojs.aaai.org/index.php/AAAI/article/view/21336
+    thumb: /assets/paper-thumbs/alp.svg
     summary: "Generates syntactically diverse, label-preserving text with lexicalized PCFGs for few-shot classification, and pairs this with augmentation-aware train/validation splitting for stronger low-resource training."
     nlp: y
     selected: y
@@ -51,6 +57,7 @@ papers:
     authors: "Hazel Kim*, Jaeman Son*, Yo-Sub Han"
     venue: "Arxiv"
     paper_pdf: https://arxiv.org/pdf/2202.02566.pdf
+    thumb: /assets/paper-thumbs/lst.svg
     summary: "Improves few-shot self-training by guiding pseudo-labels with a refined lexicon, reducing overconfident early errors when only a handful of labeled examples are available."
     nlp: y
     selected: y

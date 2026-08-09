@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img">
+  <rect width="96" height="96" rx="16" fill="#fff8f1"/>
+  
+  <text x="48" y="15" text-anchor="middle" font-family="Sora, Helvetica, sans-serif" font-size="8" font-weight="700" fill="#8f4f1c">expand thoughts</text>
+  <rect x="30" y="22" width="36" height="14" rx="4" fill="#b86b2a"/>
+  <text x="48" y="32" text-anchor="middle" font-family="Sora, Helvetica, sans-serif" font-size="7" fill="#fff">problem</text>
+  <path d="M48 36v8" stroke="#8f4f1c" stroke-width="2"/>
+  <rect x="10" y="46" width="22" height="12" rx="3" fill="#d9b08a"/>
+  <rect x="37" y="46" width="22" height="12" rx="3" fill="#d9b08a"/>
+  <rect x="64" y="46" width="22" height="12" rx="3" fill="#d9b08a"/>
+  <text x="21" y="54" text-anchor="middle" font-family="Sora, Helvetica, sans-serif" font-size="7" fill="#4a3424">t1</text>
+  <text x="48" y="54" text-anchor="middle" font-family="Sora, Helvetica, sans-serif" font-size="7" fill="#4a3424">t2</text>
+  <text x="75" y="54" text-anchor="middle" font-family="Sora, Helvetica, sans-serif" font-size="7" fill="#4a3424">t3</text>
+  <path d="M21 58v6 M48 58v6 M75 58v6" stroke="#8f4f1c" stroke-width="1.8"/>
+  <rect x="28" y="66" width="40" height="12" rx="3" fill="#8f4f1c"/>
+  <text x="48" y="75" text-anchor="middle" font-family="Sora, Helvetica, sans-serif" font-size="7" fill="#fff">math solution</text>
+  <text x="48" y="90" text-anchor="middle" font-family="Sora, Helvetica, sans-serif" font-size="7.5" font-weight="700" fill="#b86b2a">ATHENA</text>
+
+</svg>

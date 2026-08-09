@@ -3,9 +3,20 @@
   {% assign papers = site.data.publications.papers %}
 {% endif %}
 
-<ol class="paper-list">
+<ol class="paper-list{% if include.large_thumbs %} paper-list-large-thumbs{% elsif include.medium_thumbs %} paper-list-medium-thumbs{% endif %}">
   {% for paper in papers %}
-    <li class="paper{% if include.show_summary and paper.summary %} paper-with-summary{% endif %}">
+    <li class="paper{% if include.show_summary and paper.summary %} paper-with-summary{% endif %}{% if paper.thumb %} paper-has-thumb{% endif %}">
+      {% if paper.thumb %}
+        <div class="paper-thumb" aria-hidden="true">
+          <img
+            src="{{ paper.thumb | relative_url }}"
+            alt=""
+            width="{% if include.large_thumbs %}164{% elsif include.medium_thumbs %}112{% else %}72{% endif %}"
+            height="{% if include.large_thumbs %}164{% elsif include.medium_thumbs %}112{% else %}72{% endif %}"
+            loading="lazy"
+          >
+        </div>
+      {% endif %}
       <div class="paper-main">
         <h3 class="paper-title">
           {% if paper.paper_pdf %}

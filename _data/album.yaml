@@ -127,6 +127,7 @@ photos:
     title: Christmas flowers
     year: 2021
     caption: A simple arrangement for the season.
+    focus: center 45%
 
   # - file: violin_2020.jpg
   #   title: Violin

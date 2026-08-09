@@ -270,13 +270,14 @@ code {
   border-radius: 1rem;
   overflow: hidden;
   transform: translateX(-0.9rem);
+  opacity: 0.52;
 }
 
 .hero-study::after {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.32);
   pointer-events: none;
 }
 
@@ -284,7 +285,7 @@ code {
   display: block;
   width: 100%;
   height: auto;
-  filter: brightness(1.12) contrast(0.96) saturate(0.92);
+  filter: brightness(1.14) contrast(0.94) saturate(0.85);
 }
 
 .hero-photo {

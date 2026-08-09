@@ -258,7 +258,7 @@ code {
 .hero-visual {
   position: relative;
   justify-self: end;
-  width: min(100%, 275px);
+  width: min(100%, 240px);
   margin-right: 0.55rem;
   padding-top: 0.65rem;
 }
@@ -909,7 +909,7 @@ a.news-title:hover {
   .hero-visual {
     order: -1;
     justify-self: start;
-    width: min(100%, 240px);
+    width: min(100%, 210px);
     margin-right: 0.4rem;
   }
 

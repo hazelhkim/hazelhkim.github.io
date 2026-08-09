@@ -1,0 +1,42 @@
+items:
+  - date: 2026-07-01
+    title: "AI for Science European Summer School, Acropolis Museum, Athens"
+    url: https://www.aiforscience.school/
+
+  - date: 2026-01-01
+    title: "Google Gemma Academic Program Award (Google Cloud Credit)"
+
+  - date: 2025-12-01
+    title: "NeurIPS 2025 Datasets & Benchmarks: Measuring what Matters: Construct Validity in Large Language Model Benchmarks"
+    url: https://openreview.net/pdf?id=mdA5lVvNcU
+
+  - date: 2025-11-01
+    title: "EMNLP 2025: Detecting LLM Hallucination through Layer-wise Information Deficiency"
+    url: https://arxiv.org/pdf/2412.10246
+
+  - date: 2025-01-01
+    title: "COLING 2025: How Ambiguous Are the Rationales For Natural Language Reasoning?"
+    url: https://arxiv.org/pdf/2402.14337
+
+  - date: 2024-09-01
+    title: "Google Gemma Academic Program Award (Google Cloud Credit)"
+
+  - date: 2024-07-01
+    title: "ELLIS Summer School — CoGenAI: Collaborative and Generative AI, Aalto University, Helsinki"
+    url: https://fcai.fi/ellis-summer-school-2024/home
+
+  - date: 2024-07-01
+    title: "LMU Munich Research Visit - Hinrich Schuetze (July - September 2024)"
+
+  - date: 2024-06-01
+    title: "ELSA Mobility Grant, 2024"
+
+  - date: 2024-05-01
+    title: "G-Research Grant for Early Career Researchers, 2024"
+
+  - date: 2023-12-01
+    title: "EMNLP 2023: ATHENA: Mathematical Reasoning with Thought Expansion"
+    url: https://arxiv.org/pdf/2311.01036.pdf
+
+  - date: 2023-10-01
+    title: "Started DPhil in Computer Science at Oxford"

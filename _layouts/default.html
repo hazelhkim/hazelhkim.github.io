@@ -1,142 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-  <!-- Basic Page Needs
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>{{ site.data.main_info.name }} | {{ page.title }}</title>
-  <meta name="description" content="Homepage of Hazel Kim">
-  <meta name="author" content="Hazel Kim">
-
-  <!-- Mobile Specific Metas
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <title>{% if page.title and page.title != "Home" %}{{ page.title }} · {% endif %}{{ site.data.main_info.name }}</title>
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="author" content="{{ site.data.main_info.name }}">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- FONT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;1,6..72,500&family=Sora:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-  <!-- CSS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href={{ "/libs/external/skeleton/normalize.css" | prepend: site.baseurl }}>
-  <link rel="stylesheet" href={{ "/libs/external/skeleton/skeleton.css" | prepend: site.baseurl }}>
-  <link rel="stylesheet" href={{ "/libs/custom/my_css.css" | prepend: site.baseurl }}>
-
-  <!-- JQuery
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <script src={{ "/libs/external/jquery-3.1.1.min.js" | prepend: site.baseurl }}></script>
-
-  <!-- Font-Awesome
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href={{ "/libs/external/font-awesome-4.7.0/css/font-awesome.min.css" | prepend: site.baseurl }}>
-
-  <!-- Skeleton tabs
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href={{ "/libs/external/skeleton_tabs/skeleton-tabs.css" | prepend: site.baseurl }}>
-  <script src={{ "/libs/external/skeleton_tabs/skeleton-tabs.js" | prepend: site.baseurl }}></script>
-
-  <!-- Timeline
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href={{ "/libs/external/timeline.css" | prepend: site.baseurl }}>
-
-  <!-- Scripts
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <!--<link rel="stylesheet" href={{ "/libs/external/github-prettify-theme.css" | prepend: site.baseurl }}>-->
-  <script src={{ "/libs/custom/my_js.js" | prepend: site.baseurl }}></script>
-
-  <!-- Favicon
-       –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <!-- 
-  <link rel="icon" type="image/png" href={{ "/libs/icon.png" | prepend: site.baseurl }}>
-  <link rel="shortcut icon" type="image/png" href={{ "/libs/icon.png" | prepend: site.baseurl }}>
-  -->
-
+  <link rel="stylesheet" href="{{ '/libs/custom/my_css.css' | relative_url }}?v=20260809c">
+  <link rel="icon" type="image/png" href="{{ '/libs/icon.png' | relative_url }}?v=hazelnut-pretty">
 </head>
 <body>
+  <div class="bg" aria-hidden="true"></div>
 
-  <!-- Primary Page Layout
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div class="container">
+  <header class="site-header">
+    <div class="wrap header-row">
+      <a class="site-title" href="{{ '/' | relative_url }}">{{ site.data.main_info.name }}</a>
+      <nav class="site-nav" aria-label="Primary">
+          <a href="{{ '/' | relative_url }}" {% if page.url == '/' %}class="is-active"{% endif %}>About</a>
+          <a href="{{ '/research/' | relative_url }}" {% if page.url contains '/research' %}class="is-active"{% endif %}>Research</a>
+          <a href="{{ '/publications/' | relative_url }}" {% if page.url contains '/publications' %}class="is-active"{% endif %}>Publications</a>
+          <a href="{{ '/blog/' | relative_url }}" {% if page.url contains '/blog' %}class="is-active"{% endif %}>Blog</a>
+          <a href="{{ '/bio/' | relative_url }}" {% if page.url contains '/bio' %}class="is-active"{% endif %}>Bio</a>
+        </nav>
+    </div>
+  </header>
 
-    <section class="header">
-      <div class="row">
-        <div class="three columns">
-          <a href="{{ site.baseurl }}/"><img class="u-max-full-width" src='{{ site.baseurl }}{{ site.data.main_info.profile_pic }}'></a>
-        </div>
-        <div class="nine columns main-description">
-            <h1>{{ site.data.main_info.name }}</h1>
-            <p>{{ site.data.main_info.title }}</p>
-            <p>{{ site.data.main_info.title2 }}</p>
-            <p>{{ site.data.main_info.email }}</p>
-            <p>
-              <span onclick="window.open('{{ site.data.main_info.twitter }}')" style="cursor: pointer">
-                <i class="fa fa-twitter" aria-hidden="true"></i>
-              </span>
+  <main class="wrap">
+    {{ content }}
+  </main>
 
-              <span onclick="window.open('{{ site.data.main_info.linkedin }}')" style="cursor: pointer">
-                <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-              </span>
-
-              <span onclick="window.open('{{ site.data.main_info.github }}')" style="cursor: pointer">
-                <i class="fa fa-github" aria-hidden="true"></i>
-              </span>
-              <span onclick="window.open('{{ site.data.main_info.scholar }}')" style="cursor: pointer">
-                <i class="fa-brands fa-google-scholar" aria-hidden="true"></i>
-              </span>
-            </p>
-        </div>
-      </div>
-    </section>
-
-    <div class="navbar-spacer"></div>
-    <nav class="navbar">
-      <div class="container">
-        <ul class="navbar-list">
-          <li class="navbar-item"><a class="navbar-link" href={{ "/index.html#bio" | prepend: site.baseurl }}>Bio</a></li>
-          <li class="navbar-item"><a class="navbar-link" href={{ "/index.html#interests" | prepend: site.baseurl }}>Interests</a></li>
-          <li class="navbar-item"><a class="navbar-link" href={{ "/index.html#publications" | prepend: site.baseurl }}>Publications</a></li>
-          <!---
-          <li class="navbar-item"><a class="navbar-link" href={{ "/index.html#people" | prepend: site.baseurl }}>People</a></li>
-          --->
-          <li class="navbar-item"><a class="navbar-link" href={{ "/index.html#resume" | prepend: site.baseurl }}>Resume</a></li>
-        </ul>
-      </div>
-    </nav>
-
-    {{ content}}
-
-    <div class="footer">
-      <div class="row">
-        <div class="four columns">
-          {{ site.data.main_info.name }}
-        </div>
-        <div class="four columns">
-          {{ site.data.main_info.email }}
-        </div>
-        <div class="four columns">
-          <span onclick="window.open('{{ site.data.main_info.twitter }}')" style="cursor: pointer">
-            <i class="fa fa-twitter" aria-hidden="true"></i>
-          </span>
-          <span onclick="window.open('{{ site.data.main_info.linkedin }}')" style="cursor: pointer">
-            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-          </span>
-          <span onclick="window.open('{{ site.data.main_info.github }}')" style="cursor: pointer">
-            <i class="fa fa-github" aria-hidden="true"></i>
-          </span>
-          <span onclick="window.open('{{ site.data.main_info.scholar }}')" style="cursor: pointer">
-            <i class="fa-brands fa-google-scholar" aria-hidden="true"></i>
-          </span>
-        </div>
+  <footer class="site-footer">
+    <div class="wrap footer-row">
+      <p><span class="footer-name">{{ site.data.main_info.name }}</span>
+        <span class="footer-meta">{{ site.data.main_info.title }}</span></p>
+      <div class="footer-links">
+        <a href="{{ site.data.main_info.scholar }}" target="_blank" rel="noopener">Scholar</a>
+        <a href="{{ site.data.main_info.github }}" target="_blank" rel="noopener">GitHub</a>
+        <a href="{{ site.data.main_info.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="{{ site.data.main_info.twitter }}" target="_blank" rel="noopener">X</a>
+        <a href="{{ site.data.main_info.email_link }}">Email</a>
       </div>
     </div>
+  </footer>
 
-  </div>
-
-  <!-- Google Analytics -->
-  {% include google_analytics.html %}
-
-<!-- End Document
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="{{ '/libs/custom/my_js.js' | relative_url }}"></script>
+  {% if site.data.main_info.google_analystics_tracking_id %}
+    {% include google_analytics.html %}
+  {% endif %}
 </body>
 </html>

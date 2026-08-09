@@ -1,7 +1,24 @@
-source:      .
+title: Hazel Kim
+description: DPhil student in Computer Science at the University of Oxford. Research on interpretable and controllable language models.
+url: ""
+baseurl: ""
+
+source: .
 destination: ./_site
-includes:    ./_includes
+includes: ./_includes
+
+markdown: kramdown
+highlighter: rouge
+permalink: /blog/:year/:month/:day/:title/
 
 collections:
   projects:
     output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      comments: false

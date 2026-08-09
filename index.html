@@ -2,266 +2,103 @@
 layout: default
 title: Home
 ---
-<html>
-<!-- ========== BIO ========== -->
-<div class="docs-section" id="intro">
-<!--   <h4>Bio</h4> -->
-  <p>
-    I am a DPhil student in computer science at the <a href="https://www.ox.ac.uk/" style="color:DodgerBlue"> University of Oxford</a>, conducting research in Natural Language Processing and Machine Learning.
-    I am grateful to be advised by <a href="https://eng.ox.ac.uk/people/philip-torr/" style="color: Orchid">Philip Torr</a> and <a href="https://www.cs.ox.ac.uk/people/yarin.gal/website/" style="color: Orchid">Yarin Gal</a> from Oxford and <a href="https://cisnlp.github.io/about/" style="color: Orchid">Hinrich Schütze</a> from LMU Munich as a student of the European Laboratory for Learning and Intelligent Systems (<a href="https://ellis.eu/" style="color: DodgerBlue" >ELLIS Society</a>). 
-    <br>
-  <!-- </p>
-<dl style="PADDING-LEFT: 40px">
-<div class="docs-section" id="bio">
-  <h4>Bio</h4>
-  <p> -->
-    <br>
-    Much of the direction I've taken was shaped by my early interaction with <a href="https://www.aeonkankyozaidan.or.jp/midoripress/profile/Choe_Jae_Chun.html" style="color: black"> Jae C. Choe</a> and his advisor <a href="https://en.wikipedia.org/wiki/E._O._Wilson" style="color: black">E.O. Wilson</a>'s book "<a href="https://en.wikipedia.org/wiki/Consilience_(book)" style="color: black">Consilience: The Unity of Knowledge</a>". I cannot express enough gratitude that Jae took my curiosity seriously at such a young age.
-    <br>
-    <br>
-    Their encouragement opened more doors than I could have expected. My interests have wandered widely, from preparing for mathematics olympiads (<a href="https://artofproblemsolving.com/wiki/index.php?title=American_Invitational_Mathematics_Examination" style="color: black">AIME 10 & 12</a>, and <a href="https://www.imo-official.org/" style="color: black">IMO</a>), to a growing curiosity about law while studying Latin and Roman law, to human rights work with <a href="https://www.amnesty.org/en/" style="color: black">Amnesty International</a>'s youth events. My early interest in biodiversity and climate change owes a great deal to Jae's close collaborator <a href="https://en.wikipedia.org/wiki/Jane_Goodall" style="color: black">Jane Goodall</a>, whose stories deepened my empathy for animals and their behavior.
-    Through my undergraduate years, alongside my computer science studies, which included competing in the <a href="https://icpc.global/" style="color: black"> ICPC programming contest</a> (North America Division, 2018), I pursued political science (minor), philosophy (first-, second-, and senior-year seminars), economics (advanced macroeconomics), and biology (evolution and gentics). I was also fortunate to study violin with conductor and violinist <a href="https://music.kzoo.edu/faculty-and-staff-2/andrew-koehler-2/" style="color: black">Andrew Koehler</a>; one of our most memorable performances was a  <a href="https://holodomormuseum.org.ua/en/news/a-concert-requiem-for-the-holodomor-was-held-in-chicago/" style="color: black">concert-requiem</a> at Harris Theater Chicago commemorating the Holodomor, the Ukrainian famine-genocide of the 1930s. Music tells <a href="https://encorekalamazoo.com/music-with-a-message/" style="color: black">stories</a> that are not far from subjects we study today; math, emotions, human beings, history, philosophy, politics, etc.
-    <br>
-    <br>
-    These experiences now converge in my research on human cognition-inspired artificial intelligence. My starting point has always been language, out of a belief that reasoning grows from language acquisition; words shape our thoughts. This perspective has guided me since I began working in deep learning in 2019, and still crafts the questions I ask today.
-    <!-- <br>
-    <br>
-    I truly believe the people around us define who we become. I'd love to connect with anyone who shares similar life values. Please feel free to reach out through the email above. -->
-  </p>
-<dl style="PADDING-LEFT: 40px">
-<div class="docs-section" id="interests">
-  <p>
-    <h4>Research Areas: <br>Interpretable and Controllable Language Models</h4>
-    <dt><b>Language Acquisition from Limited Sources</b></dt>
-    <dd>Language models shape the world with given data. They work well with quality and abundant data while providing biased perspectives with scarce, poor data. However, quality data is often expensive to collect or private to get access. This challenge has inspired me to study how to encourage language models to acquire language proficiency and reasoning ability from a limited quantity or quality of resources.</dd>
-    <dt><b>Causal Inference, not Correlation</b></dt>
-    <dd>The heavy reliance on correlations between input observation and output predictions limits language models to reason about cause-and-effect relationships that are not explicitly present in the text. High correlations do not always uncover the causality of events. Causal inference is a crucial topic to control language models against biased data.</dd>
-    <dt><b>Information Quantification</b></dt> 
-    <dd>Computation creates valuable information. The usable information for models varies depending on their interaction between input and output resources. Exploring how to quantify information is essential for interpreting model behaviors.</dd>
-    <dt><b>Emergent Knowledge of Language Models</b></dt> 
-    <dd>Language models emerge new knowledge that is not present in smaller models when the scale grows. The emergent knowledge is a valuable yet underexplored resource. This has motivated me to investigate them regarding the model capabilities of how trustworthy they are for transparent usage in real-world scenarios.</dd>
-    </dl>
-  </p>
+
+<section class="hero">
+  <div class="hero-text">
+    <h1 class="hero-name">{{ site.data.main_info.name }}</h1>
+    <p class="hero-lede">
+      {{ site.data.main_info.title }}
+      <a class="hero-research-link" href="{{ '/research/' | relative_url }}">Research →</a>
+    </p>
+    <ul class="hero-links">
+      <li><a href="{{ site.data.main_info.scholar }}" target="_blank" rel="noopener">Google Scholar</a></li>
+      <li><a href="{{ site.data.main_info.github }}" target="_blank" rel="noopener">GitHub</a></li>
+      <li><a href="{{ site.data.main_info.linkedin }}" target="_blank" rel="noopener">LinkedIn</a></li>
+      <li><a href="{{ '/publications/' | relative_url }}">Publications</a></li>
+      <li><a href="{{ '/blog/' | relative_url }}">Blog</a></li>
+    </ul>
+    <p class="hero-email">{{ site.data.main_info.email }}</p>
   </div>
-  
-<!-- <h4>Recent Research Areas</h4>
-<div class="docs-section" id="projects">
-      {% assign selected_projects = site.data.projects.projects | where: "selected", "y" %}
-      {% for project in selected_projects %}
-        {% assign index_modulo = forloop.index0 | modulo:3 %}
-        {% if index_modulo == 0 %}
-          <div class="row">
-        {% endif %}
+  <figure class="hero-photo">
+    <img
+      src="{{ site.data.main_info.profile_pic | relative_url }}"
+      alt="Portrait of {{ site.data.main_info.name }}"
+      width="1069"
+      height="1149"
+    >
+  </figure>
+</section>
 
-          <div class="four columns">
-            <div class="project-container">
-
-                <div class="project-image-container">
-                  <a href="{{ project.url }}">
-                    <img src="{{ project.thumbnail }}" class="u-max-full-width" />
-                  </a>
-                </div>
-
-                <div class="project-caption">
-                  <center>
-                  <b>{{ project.title }}</b> <br/>
-                  </center>
-                  {{ project.subtitle }}
-                </div>
-
-            </div>
-          </div>
-
-        {% if index_modulo == 2 %}
-          </div>
-        {% endif %}
-      {% endfor %}
-
-</div> -->
-
-<div class="docs-section" id="publications">
-  <h4>Publications</h4>
-  <ul class="tab-nav">
-    <li><div class="button active" data-ref="#papers-sel">Selected and Recent Papers</div></li>
-<!--     <li><div class="button" data-ref="#papers-all">All</div></li>    
-    <li><div class="button" data-ref="#papers-ML">Stats+ML</div></li>
-    <li><div class="button" data-ref="#papers-NLP">NLP</div></li> -->
-  </ul>
-
-  <div class="tab-content">
-
-    <div class="tab-pane active" id="papers-sel">
-      {% assign papers = site.data.publications.papers | where: "selected", "y" %}
-      {% for paper in papers %}
-        <div class="paper">
-          <p class="title"><b>{{ paper.title }}</b>
-            {% if paper.paper_pdf %}
-              <a class="button" href="{{ paper.paper_pdf | prepend: site.baseurl }}" target="_blank">PDF</a>
-            {% endif %}
-            {% if paper.slides %}
-              <a class="button" href="{{ paper.slides | prepend: site.baseurl }}" target="_blank">Slides</a>
-            {% endif %}
-            {% if paper.poster %}
-              <a class="button" href="{{ paper.poster | prepend: site.baseurl }}" target="_blank">Poster</a>
-            {% endif %}
-            {% if paper.video %}
-              <a class="button" href="{{ paper.video }}" target="_blank">Video</a>
-            {% endif %}
-            {% if paper.code %}
-              <a class="button" href="{{ paper.code }}" target="_blank">Code</a>
-            {% endif %}
-          </p>
-          <p>{{ paper.authors }}</p>
-          <p><i>{{ paper.venue }}</i></p>
-           <div class="paper-buttons">
-
-          </div>
-        </div>
-      {% endfor %}
-    </div>
-<!-- 
-    <!-- All PAPERS -->
-    <div class="tab-pane" id="papers-all">
-      {% assign papers = site.data.publications.papers %}
-      {% for paper in papers %}
-        <div class="paper">
-          <p class="title"><b>{{ paper.title }}</b>
-            {% if paper.paper_pdf %}
-              <a class="button" href="{{ paper.paper_pdf | prepend: site.baseurl }}" target="_blank">PDF</a>
-            {% endif %}
-            {% if paper.slides %}
-              <a class="button" href="{{ paper.slides | prepend: site.baseurl }}" target="_blank">Slides</a>
-            {% endif %}
-            {% if paper.poster %}
-              <a class="button" href="{{ paper.poster | prepend: site.baseurl }}" target="_blank">Poster</a>
-            {% endif %}
-            {% if paper.video %}
-              <a class="button" href="{{ paper.video }}" target="_blank">Video</a>
-            {% endif %}
-            {% if paper.code %}
-              <a class="button" href="{{ paper.code }}" target="_blank">Code</a>
-            {% endif %}
-          </p>
-          <p>{{ paper.authors }}</p>
-          <p><i>{{ paper.venue }}</i></p>
-           <div class="paper-buttons">
-
-          </div>
-        </div>
-      {% endfor %}
-    </div>
-    
-
-    <!-- ML PAPERS -->
-    <div class="tab-pane" id="papers-ML">
-      {% assign ml_papers = site.data.publications.papers | where: "statsml", "y" %}
-      {% for paper in ml_papers %}
-        <div class="paper">
-          <p class="title"><b>{{ paper.title }}</b>
-            {% if paper.paper_pdf %}
-              <a class="button" href="{{ paper.paper_pdf | prepend: site.baseurl }}" target="_blank">PDF</a>
-            {% endif %}
-            {% if paper.slides %}
-              <a class="button" href="{{ paper.slides | prepend: site.baseurl }}" target="_blank">Slides</a>
-            {% endif %}
-            {% if paper.poster %}
-              <a class="button" href="{{ paper.poster | prepend: site.baseurl }}" target="_blank">Poster</a>
-            {% endif %}
-            {% if paper.video %}
-              <a class="button" href="{{ paper.video }}" target="_blank">Video</a>
-            {% endif %}
-            {% if paper.code %}
-              <a class="button" href="{{ paper.code }}" target="_blank">Code</a>
-            {% endif %}
-          </p>
-          <p>{{ paper.authors }}</p>
-          <p><i>{{ paper.venue }}</i></p>
-           <div class="paper-buttons">
-
-          </div>
-        </div>
-      {% endfor %}
-    </div>
-
-    <!-- NLP PAPERS -->
-    <div class="tab-pane" id="papers-NLP">
-      {% assign nlp_papers = site.data.publications.papers | where: "nlp", "y" %}
-      {% for paper in nlp_papers %}
-        <div class="paper">
-          <p class="title"><b>{{ paper.title }}</b>
-          {% if paper.paper_pdf %}
-              <a class="button" href="{{ paper.paper_pdf | prepend: site.baseurl }}" target="_blank">PDF</a>
-            {% endif %}
-            {% if paper.slides %}
-              <a class="button" href="{{ paper.slides | prepend: site.baseurl }}" target="_blank">Slides</a>
-            {% endif %}
-            {% if paper.poster %}
-              <a class="button" href="{{ paper.poster | prepend: site.baseurl }}" target="_blank">Poster</a>
-            {% endif %}
-            {% if paper.video %}
-              <a class="button" href="{{ paper.video }}" target="_blank">Video</a>
-            {% endif %}
-            {% if paper.code %}
-              <a class="button" href="{{ paper.code }}" target="_blank">Code</a>
-              {% endif %}
-          </p>
-          <p>{{ paper.authors }}</p>
-          <p><i>{{ paper.venue }}</i></p>
-        </div>
-      {% endfor %}
-    </div>
+<section class="section">
+  <div class="section-head">
+    <div class="section-label">About</div>
+    <a class="section-more" href="{{ '/bio/' | relative_url }}">Full bio →</a>
   </div>
- <p><a href="https://scholar.google.com/citations?user=deQ0ZckAAAAJ&hl=en" target="_blank" style="color:Tomato">Google Scholar</a> </p>
- <!-- <p style="font-size: 12px;">
-  <b>Wonderful People I've Met: </b>
-    I was fortunate to start researching with consistent support from <a href="https://toc.yonsei.ac.kr/~emmous/" style="color: Orchid" >Yosub Han</a>. 
-    I got great insights into what and how to research from <a href="https://coallaoh.github.io/" style="color: Orchid">Seong Joon Oh</a>. 
-    I was delighted to work with humble yet astute advice from <a href="https://sangdooyun.github.io/" style="color: Orchid" >Sangdoo Yun</a> and lucky to have inspiring discussions with <a href="http://ids.snu.ac.kr/site/members/A_Kangmin_Yoo.html" style="color: Orchid">Kangmin Yoo</a>. 
-    I was happy to mentor enthusiastic <a href="https://thejb.ai/" style="color: Orchid">JB. Kim</a> in writing his first paper. 
-    I enjoyed working on my first paper with Daecheol Woo's sincerity and positive mindset. 
-    I thankfully met many great people while conducting research! I appreciate all of my collaborators for supporting me in many different ways :)
-  </p> -->
-</div>
+  <div class="prose">
+    <p>
+      I am a DPhil student in computer science at the <a href="https://www.ox.ac.uk/" target="_blank" rel="noopener">University of Oxford</a>, conducting research in Natural Language Processing and Machine Learning.
+      I am grateful to be advised by <a href="https://eng.ox.ac.uk/people/philip-torr/" target="_blank" rel="noopener">Philip Torr</a> and <a href="https://www.cs.ox.ac.uk/people/yarin.gal/website/" target="_blank" rel="noopener">Yarin Gal</a> from Oxford and <a href="https://cisnlp.github.io/about/" target="_blank" rel="noopener">Hinrich Schütze</a> from LMU Munich as a student of the European Laboratory for Learning and Intelligent Systems (<a href="https://ellis.eu/" target="_blank" rel="noopener">ELLIS Society</a>).
+    </p>
+  </div>
+</section>
 
-  <!-- 
-<!-- ========== RESUME ========== -->
-<!-- <div class="docs-section" id="resume">
-   <h4>Resume</h4>  
-   <ul class="timeline"> 
-     {% for exp in site.data.experience.experiences %} 
-      <li> 
-      {% if exp.category == "work" %} 
-      <div class="direction-l"> 
-      {% else %} 
-      <div class="direction-r"> 
-      {% endif %} 
-        <div class="flag-wrapper"> 
-          <span class="flag">{{ exp.place }}</span> 
-          <span class="time-wrapper"><span class="time">{{ exp.time }}</span></span> 
-       </div> 
-        <div class="desc"><b>{{ exp.title }}</b> <br/> {{ exp.subtitle }}</div>
-        <div class="desc">
-        <b>{{ exp.title | split: ", " | join: "<br/>" }}</b>
-        <ul class="subtitle-list">
-          {% for item in exp.subtitle %}
-          <li>{{ item }}</li>
+<section class="section section-news">
+  <div class="section-head">
+    <div class="section-label">News</div>
+  </div>
+  {% if site.data.news.items %}
+    {% assign news_items = site.data.news.items | sort: "date" | reverse %}
+    <div class="news-scroller" data-news-scroller data-visible="5">
+      <div class="news-viewport" data-news-viewport>
+        <div class="news-track" data-news-track>
+          {% for item in news_items %}
+            <article class="news-item" data-news-item>
+              <time datetime="{{ item.date }}">{{ item.date | date: "%b %Y" }}</time>
+              <div class="news-item-body">
+                {% if item.url %}
+                  <a class="news-title" href="{{ item.url }}"{% if item.url contains "http" %} target="_blank" rel="noopener"{% endif %}>{{ item.title }}</a>
+                {% else %}
+                  <span class="news-title">{{ item.title }}</span>
+                {% endif %}
+              </div>
+            </article>
           {% endfor %}
-        </ul>
+        </div>
       </div>
-      </div> 
-    </li>
-     {% endfor %}
-  </ul>
-</div>  -->
+    </div>
+  {% else %}
+    <p class="empty-note">News updates will appear here.</p>
+  {% endif %}
+</section>
 
+<section class="section">
+  <div class="section-head">
+    <div class="section-label">Publications</div>
+    <a class="section-more" href="{{ '/publications/' | relative_url }}">View with summaries →</a>
+  </div>
+  {% include papers.html papers=site.data.publications.papers %}
+</section>
 
-
-<!--   <div class="docs-section" id="ack"> -->
-  <p style="font-size: 10px;">Acknowledgement</p>
-  <p style="font-size: 8px;">
-    This website uses the website design and template by <a href="https://github.com/msaveski/www_personal">Martin Saveski</a>
-  </p>
-
-</div>
-</html>
-
+<section class="section">
+  <div class="section-head">
+    <div class="section-label">Recent posts</div>
+    <a class="section-more" href="{{ '/blog/' | relative_url }}">All posts →</a>
+  </div>
+  {% if site.posts.size > 0 %}
+    <ul class="post-list">
+      {% for post in site.posts limit: 3 %}
+        <li>
+          <time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: '%b %-d, %Y' }}</time>
+          <div>
+            <a class="post-list-title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+            {% if post.excerpt %}
+              <p class="post-list-excerpt">{{ post.excerpt | strip_html | truncate: 140 }}</p>
+            {% endif %}
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p class="empty-note">Blog posts will appear here.</p>
+  {% endif %}
+</section>

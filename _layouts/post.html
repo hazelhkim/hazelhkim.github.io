@@ -1,0 +1,23 @@
+---
+layout: default
+---
+<article class="post">
+  <header class="post-header">
+    <p class="post-date">
+      <time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: '%B %-d, %Y' }}</time>
+      {% if page.tags %}
+        · {% for tag in page.tags %}<span class="post-tag">{{ tag }}</span>{% unless forloop.last %}, {% endunless %}{% endfor %}
+      {% endif %}
+    </p>
+    <h1 class="post-title">{{ page.title }}</h1>
+    {% if page.subtitle %}
+      <p class="post-subtitle">{{ page.subtitle }}</p>
+    {% endif %}
+  </header>
+
+  <div class="post-body prose">
+    {{ content }}
+  </div>
+
+  <p class="post-back"><a href="{{ '/blog/' | relative_url }}">← All posts</a></p>
+</article>

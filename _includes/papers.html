@@ -1,0 +1,32 @@
+{% assign papers = include.papers %}
+{% if papers == nil %}
+  {% assign papers = site.data.publications.papers %}
+{% endif %}
+
+<ol class="paper-list">
+  {% for paper in papers %}
+    <li class="paper{% if include.show_summary and paper.summary %} paper-with-summary{% endif %}">
+      <div class="paper-main">
+        <h3 class="paper-title">
+          {% if paper.paper_pdf %}
+            <a href="{{ paper.paper_pdf }}" target="_blank" rel="noopener">{{ paper.title }}</a>
+          {% else %}
+            {{ paper.title }}
+          {% endif %}
+        </h3>
+        <p class="paper-authors">{{ paper.authors | replace: "Hazel Kim", "<strong>Hazel Kim</strong>" }}</p>
+        <p class="paper-venue">{{ paper.venue }}</p>
+        {% if include.show_summary and paper.summary %}
+          <p class="paper-summary">{{ paper.summary }}</p>
+        {% endif %}
+      </div>
+      <div class="paper-links">
+        {% if paper.paper_pdf %}<a href="{{ paper.paper_pdf }}" target="_blank" rel="noopener">PDF</a>{% endif %}
+        {% if paper.code %}<a href="{{ paper.code }}" target="_blank" rel="noopener">Code</a>{% endif %}
+        {% if paper.slides %}<a href="{{ paper.slides | relative_url }}" target="_blank" rel="noopener">Slides</a>{% endif %}
+        {% if paper.poster %}<a href="{{ paper.poster | relative_url }}" target="_blank" rel="noopener">Poster</a>{% endif %}
+        {% if paper.video %}<a href="{{ paper.video }}" target="_blank" rel="noopener">Video</a>{% endif %}
+      </div>
+    </li>
+  {% endfor %}
+</ol>

@@ -1,0 +1,128 @@
+---
+layout: page
+title: Bio
+subtitle: >-
+  I've found that sharing my path is how I meet people who share my values. Some I've already met; others I've yet to. Below is a longer walk through the influences that shaped my research, and the gratitude I try not to forget. This page is also here to remind me, in difficult times, how lucky I've been to have met these people.
+permalink: /bio/
+---
+
+<div class="prose">
+  <p>
+    Much of the direction I’ve taken was shaped by my early interaction with
+    <a href="https://en.namu.wiki/w/%EC%B5%9C%EC%9E%AC%EC%B2%9C" target="_blank" rel="noopener">Jae C. Choe</a>
+    and his advisor
+    <a href="https://en.wikipedia.org/wiki/E._O._Wilson" target="_blank" rel="noopener">E.O. Wilson</a>’s book
+    <a href="https://en.wikipedia.org/wiki/Consilience_(book)" target="_blank" rel="noopener"><em>Consilience: The Unity of Knowledge</em></a>.
+    I cannot express enough gratitude that Jae took my curiosity seriously at such a young age.
+  </p>
+  <p>
+    His encouragement opened more doors than I expected. My interests have ranged widely—from preparing mathematics olympiads
+    (<a href="https://artofproblemsolving.com/wiki/index.php?title=American_Invitational_Mathematics_Examination" target="_blank" rel="noopener">AIME</a>,
+    <a href="https://www.imo-official.org/" target="_blank" rel="noopener">IMO</a>)
+    to law, which I explored through Latin, Roman law, and human rights work with
+    <a href="https://www.amnesty.org/en/" target="_blank" rel="noopener">Amnesty International</a>’s youth events,
+    and to biodiversity.
+    Despite being underage, I was selected by the court to review legal case studies and assess whether each outcome served justice.
+    My early interest in biodiversity and climate change owes a great deal to Jae’s close collaborator
+    <a href="https://en.wikipedia.org/wiki/Jane_Goodall" target="_blank" rel="noopener">Jane Goodall</a>,
+    whose stories deepened my empathy for animals and their behavior.
+    I conducted ecological research in the Demilitarized Zone (DMZ), with unusual permission for regular fieldwork, leading to my selection as a Biodiversity Leader (7th cohort, 2012) by Korea’s Ministry of Environment.
+    I also founded and led a 15-member youth research team hosted at
+    <a href="https://health.snu.ac.kr/en/" target="_blank" rel="noopener">Seoul National University’s Graduate School of Public Health</a>
+    (2012–2014), publishing
+    <em>Youth’s Perspective on the IPCC Special Report</em>
+    for the United Nations—analyzing and translating the
+    <a href="https://www.ipcc.ch/site/assets/uploads/2018/03/SREX_Full_Report-1.pdf" target="_blank" rel="noopener">IPCC Special Report</a>—
+    mentored by the school and approved by the Korea Meteorological Administration.
+    These backgrounds came together at HAFS’s Economia entrepreneurship club, where I explored social entrepreneurship as a tool for social good and our team won several pitch competitions.
+  </p>
+  <p>
+    Through my undergraduate years, alongside my computer science studies (major, advised by Alyce Brady),
+    which included competing in the
+    <a href="https://icpc.global/" target="_blank" rel="noopener">ICPC</a>
+    programming contest (North America Division, 2018), I studied political science (minor, advised by John C. Dugas),
+    philosophy (ethics, human rights, international law, and critical social theory),
+    economics (advanced macroeconomics, senior individualized course advised by
+    <a href="https://en.wikipedia.org/wiki/Hannah_McKinney" target="_blank" rel="noopener">Hannah Apps</a>),
+    and biology (evolution and genetics).
+    I was also fortunate to study violin with conductor and violinist
+    <a href="https://www.andrewkoehlerconductor.com/about" target="_blank" rel="noopener">Andrew Koehler</a>
+    among other great teachers outside my undergraduate years; one of our most memorable performances was a
+    <a href="https://holodomormuseum.org.ua/en/news/a-concert-requiem-for-the-holodomor-was-held-in-chicago/" target="_blank" rel="noopener">concert-requiem</a>
+    at Harris Theater Chicago commemorating the Holodomor, the Ukrainian famine-genocide of the 1930s.
+    To this day, I draw immense inspiration from music that tells stories close to the subjects we study: math, emotions, human beings, history, philosophy, politics, etc.
+  </p>
+  <p>
+    These experiences now converge in my research on human cognition–inspired artificial intelligence.
+    My starting point has always been language, out of a belief that reasoning grows from language acquisition; words shape our thoughts.
+    This perspective has guided me since 2019, when I wrote my undergraduate thesis
+    <em>Deep Learning Neural Network Model for Natural Language Processing: A Case Study of BBC Christmas Cooking Recipes</em>,
+    which studied sentiment analysis through mathematical explanations of transfer learning and the technical debt of model input layers, and proposed new backpropagation methods through layer manipulation.
+  </p>
+  <p>
+    In 2020, when I was reluctant to find an advisor because of an interest mismatch, I met
+    <a href="https://toc.yonsei.ac.kr/~emmous/" target="_blank" rel="noopener">Yosub Han</a>,
+    who remembered me from the interview until I met him again a year later, and without hesitation promised to support me in whatever I was interested in.
+    He has indeed done so—from daily morning flat whites to afternoon walks to asking for collaboration with linguists and legal experts—when I introduced my interests to his group.
+    I have two words that I deeply appreciate from him:
+  </p>
+  <blockquote class="bio-quote">
+    <p>When you approached me, I felt like I'd been given a gift.</p>
+    <p>You are a diamond in the rough.</p>
+  </blockquote>
+  <p>
+    Those words have planted a power to endure the difficult times in my PhD journey.
+  </p>
+  <p>
+    The introduction slides from 2020 below are particularly meaningful to me now. To my surprise, they show that my interest has held from the beginning.
+    I keep returning to the same questions: the meeting of machine intelligence and logical reasoning, latent alignment for understanding language models, interpretable and generalizable deep learning, and the intersection of linguistics and cognitive science.
+    Chomsky's "language serves essentially for the expression of thought" and Pinker's "language is the jewel in the crown of cognition" still shape how I think about them today.
+  </p>
+  <p>
+    What has stayed with me just as much are the words of the people around me. While making these slides after finishing my undergraduate degree, I came across notes again from wonderful scholars I met in my high school years.
+    I wonder if I can be humble enough to genuinely dedicate myself to someone else who is still early in their journey, the way they did for me despite being among the very best in their field:
+  </p>
+  <blockquote class="bio-quote">
+    <p>Let’s sit down together now and then and talk about this and that. It would be best of all if you could stay on and study here with us, but even if you get into a top university elsewhere, I wonder if you might still come by a couple of times a week to do research together. What do you say?</p>
+  </blockquote>
+  <p>
+    I wonder if I can be as mindful of my own presence as I've been touched by theirs:
+  </p>
+  <blockquote class="bio-quote">
+    <p>I love your sincere and earnest attitude toward the path of learning. Hazel, you will do wonderfully.</p>
+    <p>My hope is that you’ll always hold on to the heart you started with, and grow into a scholar who gives herself to her work with honesty and sincerity…</p>
+  </blockquote>
+  <p>
+    Back then I didn't fully understand what they meant, or where any of it would lead. But these notes fill me even now.
+    However my path unfolds, I'll carry my gratitude for the people who shaped it.
+    And I try to remember that I, too, may mean as much to someone else in any moment and through anything I do.
+  </p>
+  <p>
+    To close, here is what I gratefully carry from one of my current advisors:
+  </p>
+  <blockquote class="bio-quote">
+    <p>I am not sure if it is a good idea to box you into an existing topic just because it's the safe path. I think you might be able to open up something genuinely new, your own direction.</p>
+  </blockquote>
+  <p>
+    I'm deeply moved that he said this to me at our first meeting. It has resonated with me throughout my ongoing PhD journey.
+  </p>
+</div>
+
+<section class="section" style="border-top: 1px solid var(--line); margin-top: 2rem; padding-top: 1.75rem;">
+  <div class="section-head">
+    <div class="section-label">Hazel Introduction</div>
+    <a class="section-more" href="{{ '/assets/docs/hazel_introduction.pdf' | relative_url }}" target="_blank" rel="noopener">Open PDF →</a>
+  </div>
+  <div class="pdf-embed">
+    <iframe
+      src="{{ '/assets/docs/hazel_introduction.pdf' | relative_url }}#page=1&view=FitH"
+      title="Hazel Introduction"
+      loading="lazy"
+    ></iframe>
+  </div>
+  <p class="empty-note">
+    If the preview does not load in your browser,
+    <a href="{{ '/assets/docs/hazel_introduction.pdf' | relative_url }}" target="_blank" rel="noopener">open the PDF</a>
+    instead.
+  </p>
+</section>

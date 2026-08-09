@@ -1,0 +1,153 @@
+photos:
+  - file: paris2026.jpg
+    title: Paris
+    year: 2026
+    caption: The Eiffel Tower.
+    focus: center 70%
+
+  - file: paris.jpg
+    title: Paris
+    year: 2026
+    caption: Henri did a great job.
+
+  - file: paris2.jpg
+    title: Paris
+    year: 2026
+    caption: Hi Descartes!
+    focus: center 60%
+
+  - file: paris3.jpg
+    title: Paris
+    year: 2026
+    caption: From the top of the Eiffel Tower.
+
+  - file: paris4.jpg
+    title: Paris
+    year: 2026
+    caption: Palace of Versailles.
+    focus: center 55%
+
+  - file: munich.jpg
+    title: Munich
+    year: 2024
+    caption: Olympic Park w mom <3
+    focus: center 47%
+
+  - file: oxford3.jpg
+    title: Oxford
+    year: 2024
+    caption: Oxford Union.
+
+  - file: oxford_anne_sophie.jpg
+    title: Oxford
+    year: 2024
+    caption: An evening with great Anne-Sophie Mutter.
+
+  - file: oxford2.jpg
+    title: Oxford
+    year: 2024
+    caption: St. John's college.
+    focus: center 70%
+
+  # - file: IMG_5107_2.jpg
+  #   title: Autumn walk
+  #   year: 2023
+  #   caption: Leaves turning, nothing urgent to do.
+  #   focus: center 35%
+
+  - file: oxford.jpg
+    title: Oxford
+    year: 2023
+    caption: OATML at Christ Church for Christmas.
+
+  - file: IMG_5113_2.jpg
+    title: Oxford
+    year: 2023
+    caption: First formal at Wolfson college.
+
+  - file: oxford4.jpg
+    title: Oxford
+    year: 2023
+    caption: OATML at Magdalen college.
+
+  - file: oxford5.jpg
+    title: Oxford
+    year: 2023
+    caption: OATML at Magdalen college.
+    focus: center 60%
+
+  - file: oxford1.jpg
+    title: Oxford
+    year: 2023
+    caption: Matriculation day.
+    focus: center 25%
+
+
+  - file: edinburgh_2023.jpg
+    title: Edinburgh
+    year: 2023
+    caption: Hot coco and steak.
+    focus: center 45%
+
+  - file: hafs_alumni_2023.jpg
+    title: HAFS Alumni
+    year: 2023
+    caption: Go hafs go.
+    focus: center 40%
+
+  - file: jeju_2023.jpg
+    title: Jeju
+    year: 2023
+    caption: Sea air and a slower rhythm for a few days.
+
+  - file: thailand.jpg
+    title: Thailand
+    year: 2023
+    caption: Bangkok for swimming.
+
+  - file: jeju_2022.jpg
+    title: Jeju
+    year: 2022
+    caption: Surfing got me tanned.
+    focus: center 70%
+
+  - file: 2022.jpg
+    title: Developing a reasoning model.
+    year: 2022
+    caption: A year captured in one ordinary frame.
+    focus: center 62%
+
+  - file: christmas2021.jpg
+    title: Christmas
+    year: 2021
+    caption: Soft lights and a small celebration at home.
+    focus: center 30%
+
+  - file: christmas2021_flowers.jpg
+    title: Christmas flowers
+    year: 2021
+    caption: A simple arrangement for the season.
+
+  - file: violin_2020.jpg
+    title: Violin
+    year: 2020
+    caption: Practice hours at home.
+    focus: center 40%
+
+  - file: violin_2020_2.jpg
+    title: Violin
+    year: 2020
+    caption: Another rehearsal, same instrument.
+    focus: center 40%
+
+  - file: 2020.jpg
+    title: Tory <3
+    year: 2020
+    caption: A keepable fragment from a difficult year.
+    focus: center 70%
+
+  - file: violin_2019.jpg
+    title: Violin
+    year: 2019
+    caption: Performance at the end of the year.
+    focus: center 67%

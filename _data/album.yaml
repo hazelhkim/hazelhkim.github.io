@@ -60,11 +60,6 @@ photos:
     year: 2023
     caption: OATML at Christ Church for Christmas.
 
-  - file: IMG_5113_2.jpg
-    title: Oxford
-    year: 2023
-    caption: First formal at Wolfson college.
-
   - file: oxford4.jpg
     title: Oxford
     year: 2023
@@ -75,6 +70,11 @@ photos:
     year: 2023
     caption: OATML at Magdalen college.
     focus: center 60%
+
+  - file: IMG_5113_2.jpg
+    title: Oxford
+    year: 2023
+    caption: First formal at Wolfson college.
 
   - file: oxford1.jpg
     title: Oxford
@@ -89,21 +89,21 @@ photos:
     caption: Hot coco and steak.
     focus: center 45%
 
-  - file: hafs_alumni_2023.jpg
-    title: HAFS Alumni
-    year: 2023
-    caption: Go hafs go.
-    focus: center 40%
+  # - file: hafs_alumni_2023.jpg
+  #   title: HAFS Alumni
+  #   year: 2023
+  #   caption: Go hafs go.
+  #   focus: center 40%
 
   - file: jeju_2023.jpg
     title: Jeju
     year: 2023
     caption: Sea air and a slower rhythm for a few days.
 
-  - file: thailand.jpg
-    title: Thailand
-    year: 2023
-    caption: Bangkok for swimming.
+  # - file: thailand.jpg
+  #   title: Thailand
+  #   year: 2023
+  #   caption: Bangkok for swimming.
 
   - file: jeju_2022.jpg
     title: Jeju
@@ -128,16 +128,16 @@ photos:
     year: 2021
     caption: A simple arrangement for the season.
 
-  - file: violin_2020.jpg
-    title: Violin
-    year: 2020
-    caption: Practice hours at home.
-    focus: center 40%
+  # - file: violin_2020.jpg
+  #   title: Violin
+  #   year: 2020
+  #   caption: Practice hours at home.
+  #   focus: center 40%
 
   - file: violin_2020_2.jpg
     title: Violin
     year: 2020
-    caption: Another rehearsal, same instrument.
+    caption: Practice hours at home.
     focus: center 40%
 
   - file: 2020.jpg
@@ -146,8 +146,8 @@ photos:
     caption: A keepable fragment from a difficult year.
     focus: center 70%
 
-  - file: violin_2019.jpg
-    title: Violin
-    year: 2019
-    caption: Performance at the end of the year.
-    focus: center 67%
+  # - file: violin_2019.jpg
+  #   title: Violin
+  #   year: 2019
+  #   caption: Performance at the end of the year.
+  #   focus: center 67%

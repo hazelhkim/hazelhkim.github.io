@@ -105,17 +105,17 @@ photos:
   #   year: 2023
   #   caption: Bangkok for swimming.
 
-  - file: jeju_2022.jpg
-    title: Jeju
-    year: 2022
-    caption: Surfing got me tanned.
-    focus: center 70%
+  # - file: jeju_2022.jpg
+  #   title: Jeju
+  #   year: 2022
+  #   caption: Surfing got me tanned.
+  #   focus: center 70%
 
-  - file: 2022.jpg
-    title: Developing a reasoning model.
-    year: 2022
-    caption: A year captured in one ordinary frame.
-    focus: center 62%
+  # - file: 2022.jpg
+  #   title: Developing a reasoning model.
+  #   year: 2022
+  #   caption: A year captured in one ordinary frame.
+  #   focus: center 62%
 
   - file: christmas2021.jpg
     title: Christmas

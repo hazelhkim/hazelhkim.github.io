@@ -293,7 +293,7 @@ code {
   margin: 0;
   right: -1.35rem;
   top: -0.55rem;
-  width: 56%;
+  width: 9.6rem;
   z-index: 1;
   overflow: hidden;
   border-radius: 50%;
@@ -918,7 +918,7 @@ a.news-title:hover {
   }
 
   .hero-photo {
-    width: 52%;
+    width: 8.5rem;
     right: -0.95rem;
     top: -0.45rem;
   }

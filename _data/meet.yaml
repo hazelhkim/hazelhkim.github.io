@@ -1,0 +1,30 @@
+# Weekly windows people can request. Google Calendar busy times are subtracted
+# when google_busy_url is set (see assets/meet/google-busy.gs).
+timezone: "Europe/London"
+timezone_label: "UK time"
+slot_minutes: 30
+horizon_days: 28
+buffer_hours: 12
+
+# Paste your Google Apps Script Web App URL here (from assets/meet/google-busy.gs).
+# Example: https://script.google.com/macros/s/XXXX/exec
+google_busy_url: "https://script.google.com/macros/s/AKfycbx0lLIwupOZ0EUb3war-E1z-oip71-YSX5hkV3d-_aOjnIlF2jXBe29oBQlp-zBCPAjKg/exec"
+
+# 0 = Sunday … 6 = Saturday
+# These are the only days/times visitors can request (Google busy blocks still apply).
+weekly_hours:
+  - day: 2 # Tuesday
+    start: "14:00"
+    end: "17:00"
+  - day: 5 # Friday
+    start: "14:00"
+    end: "17:30"
+
+# Fully blocked calendar dates (YYYY-MM-DD), in addition to Google busy times
+blocked_dates: []
+
+intro: "Availability follows my Google Calendar (busy times only — no event details). I’ll get your request by email."
+request_subject: "Meeting request via website"
+request_emails:
+  - hazel.kimh@gmail.com
+  - hazel.kim@cs.ox.ac.uk

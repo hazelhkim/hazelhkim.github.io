@@ -14,6 +14,9 @@ permalink: /blog/:year/:month/:day/:title/
 collections:
   projects:
     output: true
+  papers:
+    output: true
+    permalink: /papers/:name/
 
 defaults:
   - scope:
@@ -22,3 +25,8 @@ defaults:
     values:
       layout: post
       comments: false
+  - scope:
+      path: ""
+      type: papers
+    values:
+      layout: paper

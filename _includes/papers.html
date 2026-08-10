@@ -5,21 +5,40 @@
 
 <ol class="paper-list{% if include.large_thumbs %} paper-list-large-thumbs{% elsif include.medium_thumbs %} paper-list-medium-thumbs{% endif %}">
   {% for paper in papers %}
+    {% if paper.slug %}
+      {% assign paper_page_url = '/papers/' | append: paper.slug | append: '/' | relative_url %}
+    {% else %}
+      {% assign paper_page_url = nil %}
+    {% endif %}
     <li class="paper{% if include.show_summary and paper.summary %} paper-with-summary{% endif %}{% if paper.thumb %} paper-has-thumb{% endif %}">
       {% if paper.thumb %}
         <div class="paper-thumb" aria-hidden="true">
-          <img
-            src="{{ paper.thumb | relative_url }}"
-            alt=""
-            width="{% if include.large_thumbs %}164{% elsif include.medium_thumbs %}112{% else %}72{% endif %}"
-            height="{% if include.large_thumbs %}164{% elsif include.medium_thumbs %}112{% else %}72{% endif %}"
-            loading="lazy"
-          >
+          {% if paper_page_url %}
+            <a href="{{ paper_page_url }}" tabindex="-1" aria-hidden="true">
+              <img
+                src="{{ paper.thumb | relative_url }}"
+                alt=""
+                width="{% if include.large_thumbs %}164{% elsif include.medium_thumbs %}112{% else %}72{% endif %}"
+                height="{% if include.large_thumbs %}164{% elsif include.medium_thumbs %}112{% else %}72{% endif %}"
+                loading="lazy"
+              >
+            </a>
+          {% else %}
+            <img
+              src="{{ paper.thumb | relative_url }}"
+              alt=""
+              width="{% if include.large_thumbs %}164{% elsif include.medium_thumbs %}112{% else %}72{% endif %}"
+              height="{% if include.large_thumbs %}164{% elsif include.medium_thumbs %}112{% else %}72{% endif %}"
+              loading="lazy"
+            >
+          {% endif %}
         </div>
       {% endif %}
       <div class="paper-main">
         <h3 class="paper-title">
-          {% if paper.paper_pdf %}
+          {% if paper_page_url %}
+            <a href="{{ paper_page_url }}">{{ paper.title }}</a>
+          {% elsif paper.paper_pdf %}
             <a href="{{ paper.paper_pdf }}" target="_blank" rel="noopener">{{ paper.title }}</a>
           {% else %}
             {{ paper.title }}
@@ -32,7 +51,14 @@
         {% endif %}
       </div>
       <div class="paper-links">
-        {% if paper.paper_pdf %}<a href="{{ paper.paper_pdf }}" target="_blank" rel="noopener">PDF</a>{% endif %}
+        {% if paper_page_url %}<a href="{{ paper_page_url }}">Details</a>{% endif %}
+        {% if paper.paper_pdf %}
+          {% if paper.paper_pdf contains '/assets/' %}
+            <a href="{{ paper.paper_pdf | relative_url }}" target="_blank" rel="noopener">PDF</a>
+          {% else %}
+            <a href="{{ paper.paper_pdf }}" target="_blank" rel="noopener">PDF</a>
+          {% endif %}
+        {% endif %}
         {% if paper.code %}<a href="{{ paper.code }}" target="_blank" rel="noopener">Code</a>{% endif %}
         {% if paper.slides %}<a href="{{ paper.slides | relative_url }}" target="_blank" rel="noopener">Slides</a>{% endif %}
         {% if paper.poster %}<a href="{{ paper.poster | relative_url }}" target="_blank" rel="noopener">Poster</a>{% endif %}

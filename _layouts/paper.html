@@ -1,0 +1,74 @@
+---
+layout: default
+---
+{% assign pdf_href = page.pdf | default: page.paper_pdf %}
+{% assign pdf_is_local = false %}
+{% if pdf_href and pdf_href contains '/assets/' %}
+  {% assign pdf_is_local = true %}
+  {% assign pdf_href = pdf_href | relative_url %}
+{% endif %}
+
+<article class="paper-page">
+  <header class="paper-page-header">
+    {% if page.thumb %}
+      <div class="paper-page-thumb" aria-hidden="true">
+        <img
+          src="{{ page.thumb | relative_url }}"
+          alt=""
+          width="164"
+          height="164"
+        >
+      </div>
+    {% endif %}
+    <div class="paper-page-meta">
+      <p class="paper-page-venue">{{ page.venue }}</p>
+      <h1 class="paper-page-title">{{ page.title }}</h1>
+      <p class="paper-page-authors">{{ page.authors | replace: "Hazel Kim", "<strong>Hazel Kim</strong>" }}</p>
+      <div class="paper-page-actions">
+        {% if pdf_href %}
+          <a class="paper-page-cta" href="{{ pdf_href }}" {% unless pdf_is_local %}target="_blank" rel="noopener"{% endunless %}>Read PDF</a>
+        {% endif %}
+        {% if page.external_pdf %}
+          <a class="paper-page-secondary" href="{{ page.external_pdf }}" target="_blank" rel="noopener">Publisher / arXiv</a>
+        {% endif %}
+        {% if page.code %}
+          <a class="paper-page-secondary" href="{{ page.code }}" target="_blank" rel="noopener">Code</a>
+        {% endif %}
+        {% if page.slides %}
+          <a class="paper-page-secondary" href="{{ page.slides | relative_url }}" target="_blank" rel="noopener">Slides</a>
+        {% endif %}
+        {% if page.poster %}
+          <a class="paper-page-secondary" href="{{ page.poster | relative_url }}" target="_blank" rel="noopener">Poster</a>
+        {% endif %}
+        {% if page.video %}
+          <a class="paper-page-secondary" href="{{ page.video }}" target="_blank" rel="noopener">Video</a>
+        {% endif %}
+        <a class="paper-page-secondary" href="{{ '/publications/' | relative_url }}">All publications</a>
+      </div>
+    </div>
+  </header>
+
+  {% if page.summary %}
+    <p class="paper-page-summary">{{ page.summary }}</p>
+  {% endif %}
+
+  <div class="paper-page-body prose">
+    {{ content }}
+  </div>
+
+  {% if page.pdf %}
+    <section class="paper-page-embed" aria-label="Embedded PDF">
+      <div class="paper-page-embed-head">
+        <h2>Paper PDF</h2>
+        <a href="{{ page.pdf | relative_url }}" target="_blank" rel="noopener">Open in new tab</a>
+      </div>
+      <div class="paper-page-embed-frame">
+        <iframe
+          src="{{ page.pdf | relative_url }}#view=FitH"
+          title="PDF of {{ page.title | escape }}"
+          loading="lazy"
+        ></iframe>
+      </div>
+    </section>
+  {% endif %}
+</article>

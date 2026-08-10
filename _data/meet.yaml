@@ -23,7 +23,7 @@ weekly_hours:
 # Fully blocked calendar dates (YYYY-MM-DD), in addition to Google busy times
 blocked_dates: []
 
-intro: "Availability follows my Google Calendar. I’ll get your request by email."
+intro: ""
 request_subject: "Meeting request via website"
 request_emails:
   - hazel.kimh@gmail.com

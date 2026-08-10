@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Meet
-subtitle: Pick an open time and tell me what you’d like to discuss.
+subtitle: If you think my time is meaningful to you, please pick an open time below and tell me what you’d like to discuss.
 permalink: /meet/
 ---
 
@@ -11,7 +11,9 @@ permalink: /meet/
   {% assign request_email = site.data.main_info.email_link | remove: "mailto:" %}
 {% endif %}
 
-<p class="meet-blurb">{{ site.data.meet.intro }}</p>
+{% if site.data.meet.intro and site.data.meet.intro != "" %}
+  <p class="meet-blurb">{{ site.data.meet.intro }}</p>
+{% endif %}
 
 <div
   class="meet-app"

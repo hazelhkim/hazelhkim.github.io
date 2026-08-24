@@ -111,7 +111,7 @@ permalink: /bio/
 <!-- <section class="section" style="border-top: 1px solid var(--line); margin-top: 2rem; padding-top: 1.75rem;">
   <div class="section-head">
     <div class="section-label">Hazel Introduction</div>
-    <a class="section-more" href="{{ '/assets/docs/hazel_introduction.pdf' | relative_url }}" target="_blank" rel="noopener">Open PDF →</a>
+    <a class="section-more" href="{{ '/assets/docs/hazel_introduction.pdf' | relative_url }}" target="_blank" rel="noopener">Open PDF  </a>
   </div>
   <div class="pdf-embed">
     <iframe
@@ -124,5 +124,5 @@ permalink: /bio/
     If the preview does not load in your browser,
     <a href="{{ '/assets/docs/hazel_introduction.pdf' | relative_url }}" target="_blank" rel="noopener">open the PDF</a>
     instead.
-  </p> -->
-</section>
+  </p>
+</section> -->

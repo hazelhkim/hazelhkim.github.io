@@ -1,6 +1,6 @@
 ---
 title: "FramingQA: Does the Question Shape the Answer? Measuring the Compositional Framing Effect"
-authors: "Hazel H. Kim, Andrew M Bean, Guilherme Affonso Ferreira de Camargo, Shanyu Chauhan, Felix Drinkall, Jade Kosché, Chenyang Ma, Glory Nwaugbala, Nabeel Seedat, Bradley Max Segal, Samuel Recht, Hinrich Schütze, Philip H.S. Torr"
+authors: "Hazel Kim, Andrew M. Bean, Guilherme Affonso Ferreira de Camargo, Shanyu Chauhan, Felix Drinkall, Jade Kosché, Chenyang Ma, Glory Nwaugbala, Nabeel Seedat, Bradley Max Segal, Samuel Recht, Hinrich Schütze, Philip Torr"
 venue: "Preprint"
 paper_pdf: https://arxiv.org/pdf/2609.07448
 thumb: /assets/paper-thumbs/framingqa.svg

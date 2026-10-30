@@ -1,6 +1,6 @@
 ---
 title: "What Hallucinations Have We Measured? Semantic Illusion, Confabulation, and Expressed Uncertainty"
-authors: "Hazel H. Kim, Jakub Binkowski, Ekaterina Fadeeva, Juan David Guerra, Yijie Hao, Zheng Yi Ho, Baixiang Huang, Buyun Liang, Siyuan Liang, Anh Tuan Luu, Potsawee Manakul, Niels Mündler-Sasahara, Aidar Myrzakhan, Shahrad Mohammadzadeh, Artem Shelmanov, Kai Shu, Ponhvoan Srey, Dacheng Tao, René Vidal, Haofei Yu, Lei Yu, Hongxiang Zhang, Yarin Gal, Hinrich Schütze, Philip H.S. Torr"
+authors: "Hazel Kim, Jakub Binkowski, Ekaterina Fadeeva, Juan David Guerra, Yijie Hao, Zheng Yi Ho, Baixiang Huang, Buyun Liang, Siyuan Liang, Anh Tuan Luu, Potsawee Manakul, Niels Mündler-Sasahara, Aidar Myrzakhan, Shahrad Mohammadzadeh, Artem Shelmanov, Kai Shu, Ponhvoan Srey, Dacheng Tao, René Vidal, Haofei Yu, Lei Yu, Hongxiang Zhang, Yarin Gal, Hinrich Schütze, Philip Torr"
 venue: "Preprint"
 paper_pdf: https://arxiv.org/pdf/2610.38520
 thumb: /assets/paper-thumbs/measured-hallucinations.svg

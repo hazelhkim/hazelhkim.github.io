@@ -21,9 +21,12 @@ title: Home
     <div class="hero-about prose">
       <p>
         I am conducting research in Natural Language Processing and Machine Learning.
-        <!-- I am also grateful to be advised by <a href="https://cisnlp.github.io/about/" target="_blank" rel="noopener">Hinrich Schütze</a> from LMU Munich as a student of the European Laboratory for Learning and Intelligent Systems (<a href="https://ellis.eu/" target="_blank" rel="noopener">ELLIS Society</a>). -->
+        I am grateful to be advised by <a href="https://eng.ox.ac.uk/people/philip-torr/" target="_blank" rel="noopener">Philip Torr</a> and <a href="https://www.cs.ox.ac.uk/people/yarin.gal/website/" target="_blank" rel="noopener">Yarin Gal</a> from Oxford and <a href="https://cisnlp.github.io/about/" target="_blank" rel="noopener">Hinrich Schütze</a> from LMU Munich as a student of the European Laboratory for Learning and Intelligent Systems (<a href="https://ellis.eu/" target="_blank" rel="noopener">ELLIS Society</a>).
         <a class="hero-bio-link" href="{{ '/bio/' | relative_url }}">Full bio →</a>
       </p>
+    </div>
+    <div class="hero-research" id="research">
+      {% include research-areas.html %}
     </div>
   </div>
   <div class="hero-visual">
@@ -52,9 +55,9 @@ title: Home
               <time datetime="{{ item.date }}">{{ item.date | date: "%b %Y" }}</time>
               <div class="news-item-body">
                 {% if item.url %}
-                  <a class="news-title" href="{{ item.url }}"{% if item.url contains "http" %} target="_blank" rel="noopener"{% endif %}>{{ item.title }}</a>
+                  <a class="news-title" href="{{ item.url }}"{% if item.url contains "http" %} target="_blank" rel="noopener"{% endif %}>{{ item.title }}{% if item.paper %} <strong>{{ item.paper }}</strong>{% endif %}</a>
                 {% else %}
-                  <span class="news-title">{{ item.title }}</span>
+                  <span class="news-title">{{ item.title }}{% if item.paper %} <strong>{{ item.paper }}</strong>{% endif %}</span>
                 {% endif %}
               </div>
             </article>
@@ -65,13 +68,6 @@ title: Home
   {% else %}
     <p class="empty-note">News updates will appear here.</p>
   {% endif %}
-</section>
-
-<section class="section section-research" id="research">
-  <div class="section-head">
-    <div class="section-label">Research</div>
-  </div>
-  {% include research-areas.html %}
 </section>
 
 <section class="section section-publications" id="publications">

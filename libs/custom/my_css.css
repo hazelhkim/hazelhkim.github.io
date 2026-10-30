@@ -11,7 +11,7 @@
   --serif: "Newsreader", "Iowan Old Style", Georgia, serif;
   --sans: "Newsreader", "Iowan Old Style", Georgia, serif;
   --display: "Source Sans 3", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --wrap: min(960px, calc(100% - 2.75rem));
+  --wrap: min(760px, calc(100% - 2.75rem));
   --ease: cubic-bezier(0.22, 1, 0.36, 1);
 }
 
@@ -201,8 +201,8 @@ code {
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto;
   gap: clamp(1.5rem, 4vw, 3rem);
-  align-items: center;
-  padding: clamp(2.5rem, 6vw, 4rem) 0 2rem;
+  align-items: start;
+  padding: clamp(2.5rem, 6vw, 4rem) 0 1.25rem;
 }
 
 .hero-name {
@@ -284,6 +284,20 @@ code {
 
 .hero-about p {
   margin: 0;
+}
+
+.hero-research {
+  margin-top: 1.15rem;
+  max-width: 40rem;
+}
+
+.hero-research .research-areas dt {
+  margin-top: 0.95rem;
+  font-size: 0.98rem;
+}
+
+.hero-research .research-areas dd {
+  font-size: 0.92rem;
 }
 
 .hero-bio-link {
@@ -1249,9 +1263,13 @@ a.news-title {
   overflow: hidden;
 }
 
+.news-title strong {
+  font-weight: 480;
+  font-family: inherit;
+}
+
 a.news-title:hover {
   color: var(--accent);
-  font-weight: 300;
 }
 
 /* Life album */

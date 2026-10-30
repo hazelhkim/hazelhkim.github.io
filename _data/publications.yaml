@@ -1,6 +1,6 @@
 papers:
   - title: "What Hallucinations Have We Measured? Semantic Illusion, Confabulation, and Expressed Uncertainty"
-    authors: "Hazel H. Kim, Jakub Binkowski, Ekaterina Fadeeva, Juan David Guerra, Yijie Hao, Zheng Yi Ho, Baixiang Huang, Buyun Liang, Siyuan Liang, Anh Tuan Luu, Potsawee Manakul, Niels Mündler-Sasahara, Aidar Myrzakhan, Shahrad Mohammadzadeh, Artem Shelmanov, Kai Shu, Ponhvoan Srey, Dacheng Tao, René Vidal, Haofei Yu, Lei Yu, Hongxiang Zhang, Yarin Gal, Hinrich Schütze, Philip H.S. Torr"
+    authors: "Hazel Kim, Jakub Binkowski, Ekaterina Fadeeva, Juan David Guerra, Yijie Hao, Zheng Yi Ho, Baixiang Huang, Buyun Liang, Siyuan Liang, Anh Tuan Luu, Potsawee Manakul, Niels Mündler-Sasahara, Aidar Myrzakhan, Shahrad Mohammadzadeh, Artem Shelmanov, Kai Shu, Ponhvoan Srey, Dacheng Tao, René Vidal, Haofei Yu, Lei Yu, Hongxiang Zhang, Yarin Gal, Hinrich Schütze, Philip H.S. Torr"
     venue: "Preprint"
     paper_pdf: https://arxiv.org/pdf/2610.38520
     thumb: /assets/paper-thumbs/measured-hallucinations.svg
@@ -10,7 +10,7 @@ papers:
     selected: y
 
   - title: "FramingQA: Does the Question Shape the Answer? Measuring the Compositional Framing Effect"
-    authors: "Hazel H. Kim, Andrew M Bean, Guilherme Affonso Ferreira de Camargo, Shanyu Chauhan, Felix Drinkall, Jade Kosché, Chenyang Ma, Glory Nwaugbala, Nabeel Seedat, Bradley Max Segal, Samuel Recht, Hinrich Schütze, Philip H.S. Torr"
+    authors: "Hazel Kim, Andrew M. Bean, Guilherme Affonso Ferreira de Camargo, Shanyu Chauhan, Felix Drinkall, Jade Kosché, Chenyang Ma, Glory Nwaugbala, Nabeel Seedat, Bradley Max Segal, Samuel Recht, Hinrich Schütze, Philip Torr"
     venue: "Preprint"
     paper_pdf: https://arxiv.org/pdf/2609.07448
     thumb: /assets/paper-thumbs/framingqa.svg

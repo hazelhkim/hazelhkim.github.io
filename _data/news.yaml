@@ -1,4 +1,16 @@
 items:
+  - date: 2026-09-11
+    title: "Machine Learning Summer School (MLSS) 50th edition — Causality and Foundation Models, Max Planck Tübingen AI Center"
+    url: https://mlss2026.is.tuebingen.mpg.de/
+
+  - date: 2026-08-01
+    title: "Cosmos Grant for Oxford AI x Philosophy Research: AI Moral Monocultures"
+    url: https://blog.cosmos-institute.org/p/announcing-80-new-cosmos-grantees
+
+  - date: 2026-07-01
+    title: "G-Research Grant for Early Career Researchers, 2026 July"
+    url: https://www.gresearch.com/news/g-research-july-2026-grant-winners/
+
   - date: 2026-07-01
     title: "AI for Science European Summer School, Acropolis Museum, Athens"
     url: https://www.aiforscience.school/
@@ -32,7 +44,7 @@ items:
     title: "ELSA Mobility Grant, 2024"
 
   - date: 2024-05-01
-    title: "G-Research Grant for Early Career Researchers, 2024"
+    title: "G-Research Grant for Early Career Researchers, 2024 June"
 
   - date: 2023-12-01
     title: "EMNLP 2023: ATHENA: Mathematical Reasoning with Thought Expansion"

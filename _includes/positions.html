@@ -1,0 +1,57 @@
+<ul class="position-list">
+  {% for group in site.data.positions.groups %}
+    <li class="position">
+      <div class="position-row{% if group.logo_wide %} position-row-wide{% endif %}">
+        {% if group.logo %}
+          <img
+            class="position-logo"
+            src="{{ group.logo | relative_url }}"
+            alt=""
+          >
+        {% endif %}
+        <div class="position-copy">
+          <p class="position-org">
+            {% if group.url %}
+              <a href="{{ group.url }}" target="_blank" rel="noopener">{{ group.org }}</a>
+            {% else %}
+              {{ group.org }}
+            {% endif %}
+          </p>
+          {% for role in group.roles %}
+            <div class="position-role">
+              <div class="position-head">
+                <p class="position-title">
+                  {% if role.url %}
+                    <a href="{{ role.url }}" target="_blank" rel="noopener">{{ role.title }}</a>
+                  {% else %}
+                    {{ role.title }}
+                  {% endif %}
+                </p>
+                {% if role.dates %}
+                  <p class="position-dates">{{ role.dates }}</p>
+                {% endif %}
+              </div>
+              {% if role.detail %}
+                <p class="position-detail">{{ role.detail }}</p>
+              {% endif %}
+              {% if role.notes %}
+                <ul class="position-notes">
+                  {% for note in role.notes %}
+                    <li>{{ note }}</li>
+                  {% endfor %}
+                </ul>
+              {% endif %}
+              {% if role.items %}
+                <ul class="position-items">
+                  {% for item in role.items %}
+                    <li>{{ item }}</li>
+                  {% endfor %}
+                </ul>
+              {% endif %}
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </li>
+  {% endfor %}
+</ul>

@@ -3,7 +3,7 @@
   {% assign papers = site.data.publications.papers %}
 {% endif %}
 
-<ol class="paper-list{% if include.large_thumbs %} paper-list-large-thumbs{% elsif include.medium_thumbs %} paper-list-medium-thumbs{% endif %}">
+<ol class="paper-list{% if include.large_thumbs %} paper-list-large-thumbs{% elsif include.medium_thumbs %} paper-list-medium-thumbs{% endif %}{% if include.compact %} paper-list-compact{% endif %}">
   {% for paper in papers %}
     {% if paper.slug %}
       {% assign paper_page_url = '/papers/' | append: paper.slug | append: '/' | relative_url %}
@@ -44,10 +44,16 @@
             {{ paper.title }}
           {% endif %}
         </h3>
-        <p class="paper-authors">{{ paper.authors | replace: "Hazel Kim", "<strong>Hazel Kim</strong>" }}</p>
+        <p class="paper-authors">{{ paper.authors | replace: "Hazel H. Kim", "<strong>Hazel H. Kim</strong>" | replace: "Hazel H Kim", "<strong>Hazel H Kim</strong>" | replace: "Hazel Kim", "<strong>Hazel Kim</strong>" }}</p>
         <p class="paper-venue">{{ paper.venue }}</p>
         {% if include.show_summary and paper.summary %}
-          <p class="paper-summary">{{ paper.summary }}</p>
+          {% if include.summary_bullets %}
+            <ul class="paper-points">
+              <li>{{ paper.summary }}</li>
+            </ul>
+          {% else %}
+            <p class="paper-summary">{{ paper.summary }}</p>
+          {% endif %}
         {% endif %}
       </div>
       <div class="paper-links">

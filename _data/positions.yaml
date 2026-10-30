@@ -1,0 +1,43 @@
+groups:
+  - org: University of Oxford
+    url: https://www.ox.ac.uk/
+    logo: /assets/logos/oxford.png
+    roles:
+      - title: Department of Computer Science
+        url: https://www.cs.ox.ac.uk/
+        dates: Oct 2023 – Present
+        detail: Teaching
+        items:
+          - Knowledge Representation and Reasoning (Hilary 2024, 2025)
+          - Deep Learning for Healthcare (Hilary 2026)
+      - title: Lady Margaret Hall
+        url: https://www.lmh.ox.ac.uk/
+        dates: Jun 2025 – Aug 2026
+        detail: Tutor & Lecturer
+        items:
+          - "AI & ML: Theory and Practice (Lady Margaret Hall Summer School 2025, 2026)"
+          - "Advanced AI and ML: LLMs and NLP (Lady Margaret Hall Summer School 2025, 2026)"
+
+  - org: ELLIS Society
+    url: https://ellis.eu/
+    logo: /assets/logos/ellis-mark.png
+    roles:
+      - title: PhD & Postdoc Program
+        dates: Oct 2023 – Present
+        notes:
+          - "Co-advisor: Hinrich Schütze"
+          - Research visit, LMU Munich
+
+  - org: Ellison Institute of Technology Oxford
+    url: https://www.eit.org/
+    logo: /assets/logos/eit.svg
+    roles:
+      - title: Ellison Scholars Selection Committee
+        dates: Jul 2026 – Present
+
+  - org: Cosmos Institute
+    url: https://blog.cosmos-institute.org/p/announcing-80-new-cosmos-grantees
+    logo: /assets/logos/cosmos.svg
+    roles:
+      - title: Oxford AI x Philosophy Research Grantee
+        dates: Jul 2026 – Present

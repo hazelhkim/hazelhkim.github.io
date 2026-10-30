@@ -23,7 +23,7 @@ layout: default
     <div class="paper-page-meta">
       <p class="paper-page-venue">{{ page.venue }}</p>
       <h1 class="paper-page-title">{{ page.title }}</h1>
-      <p class="paper-page-authors">{{ page.authors | replace: "Hazel Kim", "<strong>Hazel Kim</strong>" }}</p>
+      <p class="paper-page-authors">{{ page.authors | replace: "Hazel H. Kim", "<strong>Hazel H. Kim</strong>" | replace: "Hazel H Kim", "<strong>Hazel H Kim</strong>" | replace: "Hazel Kim", "<strong>Hazel Kim</strong>" }}</p>
       <div class="paper-page-actions">
         {% if pdf_href %}
           <a class="paper-page-cta" href="{{ pdf_href }}" {% unless pdf_is_local %}target="_blank" rel="noopener"{% endunless %}>Read PDF</a>
@@ -43,7 +43,7 @@ layout: default
         {% if page.video %}
           <a class="paper-page-secondary" href="{{ page.video }}" target="_blank" rel="noopener">Video</a>
         {% endif %}
-        <a class="paper-page-secondary" href="{{ '/publications/' | relative_url }}">All publications</a>
+        <a class="paper-page-secondary" href="{{ '/' | relative_url }}#publications">All publications</a>
       </div>
     </div>
   </header>

@@ -1,4 +1,24 @@
 papers:
+  - title: "What Hallucinations Have We Measured? Semantic Illusion, Confabulation, and Expressed Uncertainty"
+    authors: "Hazel H. Kim, Jakub Binkowski, Ekaterina Fadeeva, Juan David Guerra, Yijie Hao, Zheng Yi Ho, Baixiang Huang, Buyun Liang, Siyuan Liang, Anh Tuan Luu, Potsawee Manakul, Niels Mündler-Sasahara, Aidar Myrzakhan, Shahrad Mohammadzadeh, Artem Shelmanov, Kai Shu, Ponhvoan Srey, Dacheng Tao, René Vidal, Haofei Yu, Lei Yu, Hongxiang Zhang, Yarin Gal, Hinrich Schütze, Philip H.S. Torr"
+    venue: "Preprint"
+    paper_pdf: https://arxiv.org/pdf/2610.38520
+    thumb: /assets/paper-thumbs/measured-hallucinations.svg
+    summary: "Defines hallucination as a confident wrong answer, split into semantic illusion and confabulation by whether a rephrased prompt recovers the truth, and kept separate from expressed uncertainty."
+    slug: measured-hallucinations
+    nlp: y
+    selected: y
+
+  - title: "FramingQA: Does the Question Shape the Answer? Measuring the Compositional Framing Effect"
+    authors: "Hazel H. Kim, Andrew M Bean, Guilherme Affonso Ferreira de Camargo, Shanyu Chauhan, Felix Drinkall, Jade Kosché, Chenyang Ma, Glory Nwaugbala, Nabeel Seedat, Bradley Max Segal, Samuel Recht, Hinrich Schütze, Philip H.S. Torr"
+    venue: "Preprint"
+    paper_pdf: https://arxiv.org/pdf/2609.07448
+    thumb: /assets/paper-thumbs/framingqa.svg
+    summary: "Introduces FramingQA, a benchmark of how question framing shifts LLM answers in law, medicine, finance, and robotics, even when the underlying facts stay fixed."
+    slug: framingqa
+    nlp: y
+    selected: y
+
   - title: "Single LLM Debate, MoLaCE: Mixture of Latent Concept Experts Against Confirmation Bias"
     authors: "Hazel Kim, Philip Torr"
     venue: "Preprint"

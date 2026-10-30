@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img">
+  <rect width="96" height="96" rx="16" fill="#fff8f1"/>
+  <text x="48" y="18" text-anchor="middle" font-family="Helvetica, sans-serif" font-size="8" font-weight="700" fill="#8f4f1c">confident error</text>
+  <rect x="16" y="28" width="64" height="16" rx="4" fill="#b86b2a"/>
+  <text x="48" y="39" text-anchor="middle" font-family="Helvetica, sans-serif" font-size="8" font-weight="700" fill="#fff">illusion</text>
+  <rect x="16" y="48" width="64" height="16" rx="4" fill="#8f4f1c"/>
+  <text x="48" y="59" text-anchor="middle" font-family="Helvetica, sans-serif" font-size="8" font-weight="700" fill="#fff">confabulation</text>
+  <rect x="16" y="68" width="64" height="16" rx="4" fill="#f3e4d4"/>
+  <text x="48" y="79" text-anchor="middle" font-family="Helvetica, sans-serif" font-size="8" fill="#4a3424">uncertainty</text>
+</svg>

@@ -4,7 +4,7 @@ authors: "Hazel H. Kim, Jakub Binkowski, Ekaterina Fadeeva, Juan David Guerra, Y
 venue: "Preprint"
 paper_pdf: https://arxiv.org/pdf/2610.38520
 thumb: /assets/paper-thumbs/measured-hallucinations.svg
-summary: "Defines hallucination as a confident wrong answer, split into semantic illusion and confabulation by whether a rephrased prompt recovers the truth, and kept separate from expressed uncertainty."
+summary: "Defines hallucination as a confidently incorrect response, split into semantic illusion and confabulation by whether a semantically equivalent prompt recovers the correct answer, and kept separate from expressed uncertainty."
 ---
 
 ## Overview

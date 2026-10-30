@@ -200,7 +200,8 @@ code {
 .hero {
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto;
-  gap: clamp(1.5rem, 4vw, 3rem);
+  column-gap: clamp(1.5rem, 4vw, 3rem);
+  row-gap: 0;
   align-items: start;
   padding: clamp(2.5rem, 6vw, 4rem) 0 1.25rem;
 }
@@ -287,8 +288,9 @@ code {
 }
 
 .hero-research {
+  grid-column: 1 / -1;
   margin-top: 1.15rem;
-  max-width: 40rem;
+  max-width: none;
 }
 
 .hero-research .research-areas dt {
